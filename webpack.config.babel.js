@@ -103,7 +103,7 @@ module.exports = {
 		}),
 		new CopyWebpackPlugin([
 			{ from: './manifest.json', to: './' },
-			{ from: './favicon.ico', to: './' }
+			{ from: './assets/favicon.ico', to: './' }
 		])
 	]).concat(ENV==='production' ? [
 		new V8LazyParseWebpackPlugin(),

@@ -1,5 +1,5 @@
 {
-  "name": "twitter-liter",
+  "name": "twitter-lite",
   "scripts": {
     "start": "micro index"
   },
