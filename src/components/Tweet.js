@@ -9,6 +9,11 @@ export default function Tweet({ tweet }) {
   const date = new Date(parseInt(tweet.timestamp_ms));
   const datetime = date.toLocaleTimeString().toLowerCase();
 
+  let imageSource = tweet.user.profile_image_url_https;
+  if (imageSource.indexOf('_normal') >= 0) {
+    imageSource = imageSource.replace('_normal', '_bigger');
+  }
+
   return (
     <div className={styles.Tweet}>
       <a
@@ -17,7 +22,7 @@ export default function Tweet({ tweet }) {
       >
         <img
           className={styles.ProfileImage}
-          src={tweet.user.profile_image_url_https}
+          src={imageSource}
         />
         <strong>{tweet.user.name}</strong>
         {' '}
