@@ -8,6 +8,7 @@
     "prestart": "npm run build",
     "build": "cross-env NODE_ENV=production webpack -p --progress",
     "prebuild": "mkdirp build && ncp src/assets build/assets",
+    "prettier": "prettier --single-quote --trailing-comma es5 --write '{src,test}/**/*.js'",
     "test": "npm run -s lint && jest --coverage",
     "test:watch": "npm run -s test -- --watch",
     "lint": "eslint src test"
@@ -73,6 +74,7 @@
     "offline-plugin": "^4.5.3",
     "postcss-loader": "^1.2.1",
     "preact-jsx-chai": "^2.2.1",
+    "prettier": "^1.2.2",
     "raw-loader": "^0.5.1",
     "regenerator-runtime": "^0.10.3",
     "replace-bundle-webpack-plugin": "^1.0.0",

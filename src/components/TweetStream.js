@@ -19,14 +19,10 @@ export default class TweetStream {
     this._tweets = [];
 
     this._stream = new PubNub({
-      subscribeKey: 'sub-c-78806dd4-42a6-11e4-aed8-02ee2ddab7fe'
+      subscribeKey: 'sub-c-78806dd4-42a6-11e4-aed8-02ee2ddab7fe',
     });
-    this._stream.addListener({
-      message: this._message
-    });
-    this._stream.subscribe({
-      channels: ['pubnub-twitter']
-    });
+    this._stream.addListener({ message: this._message });
+    this._stream.subscribe({ channels: ['pubnub-twitter'] });
   }
 
   get loading() {

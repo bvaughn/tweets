@@ -8,4 +8,4 @@ options.functions = false;
 // activate the JSX assertion extension:
 chai.use(assertJsx);
 
-global.sleep = ms => new Promise( resolve => setTimeout(resolve, ms) );
+global.sleep = ms => new Promise(resolve => setTimeout(resolve, ms));

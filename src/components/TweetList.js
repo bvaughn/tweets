@@ -1,6 +1,8 @@
 import { h, Component } from 'preact';
 import AutoSizer from 'react-virtualized/dist/commonjs/AutoSizer';
-import CellMeasurer, { CellMeasurerCache } from 'react-virtualized/dist/commonjs/CellMeasurer';
+import CellMeasurer, {
+  CellMeasurerCache,
+} from 'react-virtualized/dist/commonjs/CellMeasurer';
 import InfiniteLoader from 'react-virtualized/dist/commonjs/InfiniteLoader';
 import List from 'react-virtualized/dist/commonjs/List';
 import LoadingIndicator from './LoadingIndicator';
@@ -8,10 +10,7 @@ import Tweet from './Tweet';
 import styles from './TweetList.css';
 
 export default class TweetList extends Component {
-  _cache = new CellMeasurerCache({
-    defaultHeight: 85,
-    fixedWidth: true
-  });
+  _cache = new CellMeasurerCache({ defaultHeight: 85, fixedWidth: true });
   _mostRecentWidth = 0;
 
   componentDidUpdate(prevProps, prevState) {
@@ -21,16 +20,13 @@ export default class TweetList extends Component {
       this._cache.clear(index, 0);
 
       if (this._list) {
-        this._list.recomputeRowHeights(index)
+        this._list.recomputeRowHeights(index);
       }
     }
   }
 
   render() {
-    const {
-      fetchTweets,
-      tweets
-    } = this.props;
+    const { fetchTweets, tweets } = this.props;
 
     return (
       <div className={styles.TweetList}>
@@ -42,14 +38,11 @@ export default class TweetList extends Component {
           {({ onRowsRendered, registerChild }) => (
             <AutoSizer>
               {({ height, width }) => {
-                if (
-                  this._mostRecentWidth &&
-                  this._mostRecentWidth !== width
-                ) {
-                  this._cache.clearAll()
+                if (this._mostRecentWidth && this._mostRecentWidth !== width) {
+                  this._cache.clearAll();
 
                   if (this._list) {
-                    this._list.recomputeRowHeights()
+                    this._list.recomputeRowHeights();
                   }
                 }
 
@@ -66,9 +59,7 @@ export default class TweetList extends Component {
                     rowCount={tweets.length + 1}
                     rowHeight={this._cache.rowHeight}
                     rowRenderer={this._rowRenderer}
-                    style={{
-                      contain: 'strict'
-                    }}
+                    style={{ contain: 'strict' }}
                     width={width}
                   />
                 );
@@ -81,7 +72,7 @@ export default class TweetList extends Component {
   }
 
   _isRowLoaded = ({ index }) => {
-    return index < this.props.tweets.length
+    return index < this.props.tweets.length;
   };
 
   _rowRenderer = ({ index, key, parent, style }) => {
@@ -105,17 +96,14 @@ export default class TweetList extends Component {
         rowIndex={index}
         width={this._mostRecentWidth}
       >
-        <div
-          className={styles.tweet}
-          style={style}
-        >
+        <div className={styles.tweet} style={style}>
           {content}
         </div>
       </CellMeasurer>
     );
   };
 
-  _setListRef = (ref) => {
+  _setListRef = ref => {
     this._list = ref;
     this._registerList(ref);
   };
