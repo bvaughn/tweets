@@ -1,0 +1,39 @@
+.Tweet {
+  padding: 9px 12px;
+  padding-left: 60px;
+  border-bottom: 1px solid #e6ecf0;
+}
+.Tweet:hover {
+  background-color: #f5f8fa;
+}
+
+.Link {
+  text-decoration: none;
+  color: inherit;
+}
+.Link:hover {
+  color: #0084B4;
+}
+
+.Username {
+  font-size: 14px;
+  color: #657786;
+}
+
+.ProfileImage {
+  float: left;
+  margin-top: 3px;
+  margin-left: -54px;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+}
+
+.Icons {
+  height: 18px;
+  margin-top: 0.5rem;
+  color: #aab8c2;
+}
+.Icon {
+  margin-left: 3rem;
+}

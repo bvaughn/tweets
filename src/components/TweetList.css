@@ -1,0 +1,8 @@
+.TweetList {
+  height: 100%;
+  width: 590px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #e6ecf0;
+}

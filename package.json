@@ -93,7 +93,10 @@
     "preact-router": "^2.4.1",
     "promise-polyfill": "^6.0.2",
     "proptypes": "^0.14.3",
-    "serve": "^5.1.4"
+    "pubnub": "^4.8.0",
+    "react-virtualized": "^9.7.3",
+    "serve": "^5.1.4",
+    "whatwg-fetch": "^2.0.3"
   },
   "main": "webpack.config.babel.js",
   "directories": {

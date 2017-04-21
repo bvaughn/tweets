@@ -1,0 +1,9 @@
+{
+  "name": "twitter-liter",
+  "scripts": {
+    "start": "micro index"
+  },
+  "dependencies": {
+    "micro": "latest"
+  }
+}
