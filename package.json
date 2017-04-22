@@ -1,5 +1,5 @@
 {
-  "name": "twitter-liter",
+  "name": "tweets",
   "version": "0.0.1",
   "description": "Ready-to-go Preact starter project powered by webpack.",
   "scripts": {

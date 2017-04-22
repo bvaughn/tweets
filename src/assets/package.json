@@ -1,9 +1,0 @@
-{
-  "name": "twitter-lite",
-  "scripts": {
-    "start": "micro index"
-  },
-  "dependencies": {
-    "micro": "latest"
-  }
-}
