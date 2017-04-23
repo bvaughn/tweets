@@ -41,7 +41,7 @@ export default class TweetStream {
       new Date(data.message.created_at)
     );
 
-    // Reenable for debugging purposes
+    // Uncomment for debugging purposes
     // console.log(JSON.stringify(data.message, null, 2))
 
     this._tweets.push(data.message);

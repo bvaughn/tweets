@@ -16,13 +16,11 @@
 }
 
 .Username {
-  font-size: 14px;
   color: #657786;
 }
 
 .ReplyingTo {
   font-size: 0.75rem;
-  margin-bottom: 0.25rem;
   white-space: pre;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -74,4 +72,16 @@
 
 .VerifiedIcon {
   color: #1da1f2;
+}
+
+.Retweeted {
+  font-size: 0.75rem;
+}
+
+.RetweetedIcon {
+  color: #17bf63;
+  float: left;
+  margin-left: -54px;
+  width: 48px;
+  text-align: right;
 }

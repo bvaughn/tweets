@@ -18,6 +18,12 @@ const AUTO_LINK_OPTIONS = {
 };
 
 export default function Tweet({ isScrolling, tweet }) {
+  let retweeter;
+  if (tweet.retweeted_status) {
+    retweeter = tweet.user;
+    tweet = tweet.retweeted_status;
+  }
+
   let text = tweet.extended_tweet
     ? tweet.extended_tweet.full_text
     : tweet.text;
@@ -58,6 +64,24 @@ export default function Tweet({ isScrolling, tweet }) {
 
   return (
     <div className={styles.Tweet}>
+      {retweeter && (
+        <div className={styles.Retweeted}>
+          <i
+            aria-hidden='true'
+            className={cn(
+              'fa fa-retweet',
+              styles.RetweetedIcon
+            )}
+          />
+          {' '}
+          <a
+            className={styles.Link}
+            href={`https://twitter.com/${retweeter.screen_name}`}
+          >
+            {retweeter.name}
+          </a> Retweeted
+        </div>
+      )}
       <a
         className={styles.Link}
         href={`https://twitter.com/${tweet.user.screen_name}`}

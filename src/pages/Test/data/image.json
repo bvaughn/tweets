@@ -1,0 +1,220 @@
+{
+  "created_at": "Sun Apr 23 22:35:38 +0000 2017",
+  "id": 856275398056845300,
+  "id_str": "856275398056845312",
+  "text": ".@Flintrass entertaining the fans! #TeamCooperTire #PBR #CooperMTP https://t.co/pI3PVm2G5W",
+  "display_text_range": [
+    0,
+    66
+  ],
+  "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+  "truncated": false,
+  "in_reply_to_status_id": null,
+  "in_reply_to_status_id_str": null,
+  "in_reply_to_user_id": null,
+  "in_reply_to_user_id_str": null,
+  "in_reply_to_screen_name": null,
+  "user": {
+    "id": 615459843,
+    "id_str": "615459843",
+    "name": "Team Cooper Tire",
+    "screen_name": "TeamCooperTire",
+    "location": "Findlay, OH",
+    "url": "http://www.teamcoopertire.com",
+    "description": "The Official Twitter account for #TeamCooperTire sponsorship, events, athletes, and activation.\nFor information on our products, follow @CooperTire",
+    "protected": false,
+    "verified": false,
+    "followers_count": 10017,
+    "friends_count": 990,
+    "listed_count": 90,
+    "favourites_count": 3615,
+    "statuses_count": 22727,
+    "created_at": "Fri Jun 22 17:46:12 +0000 2012",
+    "utc_offset": -25200,
+    "time_zone": "Pacific Time (US & Canada)",
+    "geo_enabled": true,
+    "lang": "en",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "profile_background_color": "B2DFDA",
+    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000115157079/863c5f9fc9a98cddf7a7839cf6c2249c.jpeg",
+    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000115157079/863c5f9fc9a98cddf7a7839cf6c2249c.jpeg",
+    "profile_background_tile": true,
+    "profile_link_color": "003082",
+    "profile_sidebar_border_color": "FFFFFF",
+    "profile_sidebar_fill_color": "DDEEF6",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/660819604395036673/TUqS3FcI_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/660819604395036673/TUqS3FcI_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/615459843/1483796666",
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": null,
+    "follow_request_sent": null,
+    "notifications": null
+  },
+  "geo": null,
+  "coordinates": null,
+  "place": {
+    "id": "2dbbd1540f814343",
+    "url": "https://api.twitter.com/1.1/geo/id/2dbbd1540f814343.json",
+    "place_type": "city",
+    "name": "Tacoma",
+    "full_name": "Tacoma, WA",
+    "country_code": "US",
+    "country": "United States",
+    "bounding_box": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -122.562215,
+            47.166863
+          ],
+          [
+            -122.562215,
+            47.319058
+          ],
+          [
+            -122.348473,
+            47.319058
+          ],
+          [
+            -122.348473,
+            47.166863
+          ]
+        ]
+      ]
+    },
+    "attributes": {}
+  },
+  "contributors": null,
+  "is_quote_status": false,
+  "retweet_count": 0,
+  "favorite_count": 0,
+  "entities": {
+    "hashtags": [
+      {
+        "text": "TeamCooperTire",
+        "indices": [
+          35,
+          50
+        ]
+      },
+      {
+        "text": "PBR",
+        "indices": [
+          51,
+          55
+        ]
+      },
+      {
+        "text": "CooperMTP",
+        "indices": [
+          56,
+          66
+        ]
+      }
+    ],
+    "urls": [],
+    "user_mentions": [
+      {
+        "screen_name": "Flintrass",
+        "name": "Flint Rasmussen",
+        "id": 231162690,
+        "id_str": "231162690",
+        "indices": [
+          1,
+          11
+        ]
+      }
+    ],
+    "symbols": [],
+    "media": [
+      {
+        "id": 856275383850647600,
+        "id_str": "856275383850647552",
+        "indices": [
+          67,
+          90
+        ],
+        "media_url": "http://pbs.twimg.com/media/C-IZ7MRUQAAb6OC.jpg",
+        "media_url_https": "https://pbs.twimg.com/media/C-IZ7MRUQAAb6OC.jpg",
+        "url": "https://t.co/pI3PVm2G5W",
+        "display_url": "pic.twitter.com/pI3PVm2G5W",
+        "expanded_url": "https://twitter.com/TeamCooperTire/status/856275398056845312/photo/1",
+        "type": "photo",
+        "sizes": {
+          "thumb": {
+            "w": 150,
+            "h": 150,
+            "resize": "crop"
+          },
+          "large": {
+            "w": 2048,
+            "h": 1536,
+            "resize": "fit"
+          },
+          "medium": {
+            "w": 1200,
+            "h": 900,
+            "resize": "fit"
+          },
+          "small": {
+            "w": 680,
+            "h": 510,
+            "resize": "fit"
+          }
+        }
+      }
+    ]
+  },
+  "extended_entities": {
+    "media": [
+      {
+        "id": 856275383850647600,
+        "id_str": "856275383850647552",
+        "indices": [
+          67,
+          90
+        ],
+        "media_url": "http://pbs.twimg.com/media/C-IZ7MRUQAAb6OC.jpg",
+        "media_url_https": "https://pbs.twimg.com/media/C-IZ7MRUQAAb6OC.jpg",
+        "url": "https://t.co/pI3PVm2G5W",
+        "display_url": "pic.twitter.com/pI3PVm2G5W",
+        "expanded_url": "https://twitter.com/TeamCooperTire/status/856275398056845312/photo/1",
+        "type": "photo",
+        "sizes": {
+          "thumb": {
+            "w": 150,
+            "h": 150,
+            "resize": "crop"
+          },
+          "large": {
+            "w": 2048,
+            "h": 1536,
+            "resize": "fit"
+          },
+          "medium": {
+            "w": 1200,
+            "h": 900,
+            "resize": "fit"
+          },
+          "small": {
+            "w": 680,
+            "h": 510,
+            "resize": "fit"
+          }
+        }
+      }
+    ]
+  },
+  "favorited": false,
+  "retweeted": false,
+  "possibly_sensitive": false,
+  "filter_level": "low",
+  "lang": "en",
+  "timestamp_ms": "1492986938381",
+  "timestring": "4/23 3:35:38 PM"
+}
