@@ -75,7 +75,7 @@ export default class TweetList extends Component {
     return index < this.props.tweets.length;
   };
 
-  _rowRenderer = ({ index, key, parent, style }) => {
+  _rowRenderer = ({ index, isScrolling, key, parent, style }) => {
     const tweets = this.props.tweets;
 
     let content;
@@ -84,7 +84,7 @@ export default class TweetList extends Component {
       content = <LoadingIndicator />;
     } else {
       const tweet = tweets[index];
-      content = <Tweet tweet={tweet} />;
+      content = <Tweet isScrolling={isScrolling} tweet={tweet} />;
     }
 
     return (

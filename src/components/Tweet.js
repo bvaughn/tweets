@@ -1,10 +1,7 @@
 import cn from 'classnames';
 import { h } from 'preact';
 import t from 'twitter-text';
-import tinytime from 'tinytime';
 import styles from './Tweet.css';
-
-const timeTemplate = tinytime('{Mo}/{DD} {h}:{mm}:{ss} {a}');
 
 // TODO Support entities: https://dev.twitter.com/overview/api/entities
 // + inline media ~ extended_tweet.entities.media
@@ -12,7 +9,15 @@ const timeTemplate = tinytime('{Mo}/{DD} {h}:{mm}:{ss} {a}');
 // TODO Show "Retweeted" header and icon
 // TODO Handle retweeted case (with custom text or not)
 
-export default function Tweet({ tweet }) {
+const AUTO_LINK_OPTIONS = {
+  'urlClass':styles.Link,
+  'listClass':styles.Link,
+  'usernameClass':styles.Link,
+  'hashtagClass':styles.Link,
+  'cashtagClass': styles.Link
+};
+
+export default function Tweet({ isScrolling, tweet }) {
   let text = tweet.extended_tweet
     ? tweet.extended_tweet.full_text
     : tweet.text;
@@ -20,19 +25,31 @@ export default function Tweet({ tweet }) {
   let replyingTo;
   if (text.indexOf('@') === 0) {
     const extractedMentions = t.extractMentionsWithIndices(text);
-    const lastMention = extractedMentions[extractedMentions.length - 1]
-    text = text.substr(lastMention.indices[1])
+    const lastMention = extractedMentions[extractedMentions.length - 1];
 
-    replyingTo = extractedMentions.map(mention => (
-      <a href={`https://twitter.com/${mention.screenName}`}>{mention.screenName}</a>
-    ))
+    text = text.substr(lastMention.indices[1]);
+
+    if (isScrolling) {
+      replyingTo = extractedMentions.map(mention => `@${mention.screenName} `);
+    } else {
+      replyingTo = extractedMentions.reduce((reduced, mention) => {
+        reduced.push(
+          <a
+            className={styles.Link}
+            href={`https://twitter.com/${mention.screenName}`}
+          >
+            @{mention.screenName}
+          </a>
+        );
+        reduced.push(' ');
+        return reduced;
+      }, []);
+    }
   }
 
-  text = t.autoLink(text)
-
-  const timestring = timeTemplate.render(
-    new Date(tweet.created_at)
-  );
+  if (!isScrolling) {
+    text = t.autoLink(text, AUTO_LINK_OPTIONS)
+  }
 
   let imageSource = tweet.user.profile_image_url_https;
   if (imageSource.indexOf('_normal') >= 0) {
@@ -50,6 +67,7 @@ export default function Tweet({ tweet }) {
           src={imageSource}
         />
         <strong>{tweet.user.name}</strong>
+        {' '}
         {tweet.user.verified && (
           <i
             aria-hidden='true'
@@ -59,6 +77,7 @@ export default function Tweet({ tweet }) {
             )}
           />
         )}
+        {' '}
         <span className={styles.Username}>
           @{tweet.user.screen_name}
           {' • '}
@@ -66,7 +85,7 @@ export default function Tweet({ tweet }) {
             className={styles.Link}
             href={`https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`}
           >
-            {timestring}
+            {tweet.timestring}
           </a>
         </span>
       </a>

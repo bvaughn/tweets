@@ -1,6 +1,8 @@
 import PubNub from 'pubnub';
+import tinytime from 'tinytime';
 
 const BATCH_SIZE = 20;
+const timeTemplate = tinytime('{Mo}/{DD} {h}:{mm}:{ss} {a}');
 
 // TODO Replace this with something that consumes Twitter's OAUTH API
 export default class TweetStream {
@@ -33,7 +35,14 @@ export default class TweetStream {
     if (!this._loading) {
       return;
     }
-console.log(JSON.stringify(data, null, 2))
+
+    // Pre-format time (once) so that onScroll doesn't have to format
+    data.message.timestring = timeTemplate.render(
+      new Date(data.message.created_at)
+    );
+
+    // Reenable for debugging purposes
+    // console.log(JSON.stringify(data.message, null, 2))
 
     this._tweets.push(data.message);
 
