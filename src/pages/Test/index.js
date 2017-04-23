@@ -1,6 +1,9 @@
 import { h } from 'preact';
+import tinytime from 'tinytime';
 import Tweet from 'components/Tweet';
 import styles from './Test.css';
+
+const timeTemplate = tinytime('{Mo}/{DD} {h}:{mm}:{ss} {a}');
 
 export default function Test() {
   return (
@@ -34,6 +37,11 @@ export default function Test() {
 }
 
 function Demo({ title, tweet }) {
+  // Pre-format time (once) to mimic TweetStream
+  tweet.timestring = timeTemplate.render(
+    new Date(tweet.created_at)
+  );
+
   return (
     <div>
       <h5>{title}</h5>

@@ -27,7 +27,7 @@ export default function Tweet({ isScrolling, tweet }) {
     const extractedMentions = t.extractMentionsWithIndices(text);
     const lastMention = extractedMentions[extractedMentions.length - 1];
 
-    text = text.substr(lastMention.indices[1]);
+    text = text.substr(lastMention.indices[1] + 1);
 
     if (isScrolling) {
       replyingTo = extractedMentions.map(mention => `@${mention.screenName} `);

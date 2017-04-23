@@ -23,6 +23,9 @@
 .ReplyingTo {
   font-size: 0.75rem;
   margin-bottom: 0.25rem;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .ProfileImage {
