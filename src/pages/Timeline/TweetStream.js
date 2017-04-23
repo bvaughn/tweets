@@ -33,6 +33,7 @@ export default class TweetStream {
     if (!this._loading) {
       return;
     }
+console.log(JSON.stringify(data, null, 2))
 
     this._tweets.push(data.message);
 

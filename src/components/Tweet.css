@@ -20,6 +20,11 @@
   color: #657786;
 }
 
+.ReplyingTo {
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
 .ProfileImage {
   float: left;
   margin-top: 3px;
@@ -27,6 +32,10 @@
   width: 48px;
   height: 48px;
   border-radius: 5px;
+}
+
+.Text {
+  white-space: pre-wrap;
 }
 
 .Icons {
@@ -58,4 +67,9 @@
 .FavoriteIcon:hover,
 .FavoriteIconActive {
   color: #e2264d;
+}
+
+.VerifiedIcon {
+  color: #1da1f2;
+  margin: 0 0.25rem;
 }

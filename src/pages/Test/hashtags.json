@@ -1,0 +1,118 @@
+{
+  "created_at": "Sun Apr 23 18:28:20 +0000 2017",
+  "id": 856213164685381600,
+  "id_str": "856213164685381632",
+  "text": "Love me some particle effects #indiedev #gamedev",
+  "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+  "truncated": false,
+  "in_reply_to_status_id": null,
+  "in_reply_to_status_id_str": null,
+  "in_reply_to_user_id": null,
+  "in_reply_to_user_id_str": null,
+  "in_reply_to_screen_name": null,
+  "user": {
+    "id": 754057716176257000,
+    "id_str": "754057716176257025",
+    "name": "Michael Pompili",
+    "screen_name": "TortillaFox",
+    "location": "San Francisco, CA",
+    "url": null,
+    "description": "Trying not to die, also making #VR games. CEO and Creative Lead at @ChurroborosVR #gamedev #indiedev #gamer #horror #sanfrancisco",
+    "protected": false,
+    "verified": false,
+    "followers_count": 1624,
+    "friends_count": 2219,
+    "listed_count": 26,
+    "favourites_count": 238,
+    "statuses_count": 298,
+    "created_at": "Fri Jul 15 20:59:04 +0000 2016",
+    "utc_offset": null,
+    "time_zone": null,
+    "geo_enabled": true,
+    "lang": "en",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "profile_background_color": "F5F8FA",
+    "profile_background_image_url": "",
+    "profile_background_image_url_https": "",
+    "profile_background_tile": false,
+    "profile_link_color": "1DA1F2",
+    "profile_sidebar_border_color": "C0DEED",
+    "profile_sidebar_fill_color": "DDEEF6",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/833104919859064832/ky1RMyO__normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/833104919859064832/ky1RMyO__normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/754057716176257025/1478752149",
+    "default_profile": true,
+    "default_profile_image": false,
+    "following": null,
+    "follow_request_sent": null,
+    "notifications": null
+  },
+  "geo": null,
+  "coordinates": null,
+  "place": {
+    "id": "5ef5b7f391e30aff",
+    "url": "https://api.twitter.com/1.1/geo/id/5ef5b7f391e30aff.json",
+    "place_type": "city",
+    "name": "Berkeley",
+    "full_name": "Berkeley, CA",
+    "country_code": "US",
+    "country": "United States",
+    "bounding_box": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -122.324818,
+            37.845953
+          ],
+          [
+            -122.324818,
+            37.905738
+          ],
+          [
+            -122.234225,
+            37.905738
+          ],
+          [
+            -122.234225,
+            37.845953
+          ]
+        ]
+      ]
+    },
+    "attributes": {}
+  },
+  "contributors": null,
+  "is_quote_status": false,
+  "retweet_count": 0,
+  "favorite_count": 0,
+  "entities": {
+    "hashtags": [
+      {
+        "text": "indiedev",
+        "indices": [
+          30,
+          39
+        ]
+      },
+      {
+        "text": "gamedev",
+        "indices": [
+          40,
+          48
+        ]
+      }
+    ],
+    "urls": [],
+    "user_mentions": [],
+    "symbols": []
+  },
+  "favorited": false,
+  "retweeted": false,
+  "filter_level": "low",
+  "lang": "en",
+  "timestamp_ms": "1492972100789"
+}

@@ -1,39 +1,35 @@
 {
-  "created_at": "Sun Apr 23 15:44:25 +0000 2017",
-  "id": 856171912724086800,
-  "id_str": "856171912724086786",
-  "text": "#patrimoniodetodos lee tanto como puedas,aprende,disfruta comparte un buen libro. Apaga la 📺 y el 📱 descubrirás tan… https://t.co/qlycg6vYOK",
-  "display_text_range": [
-    0,
-    140
-  ],
+  "created_at": "Sun Apr 23 18:03:29 +0000 2017",
+  "id": 856206910969827300,
+  "id_str": "856206910969827328",
+  "text": "Off the next two days 😬💯",
   "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-  "truncated": true,
+  "truncated": false,
   "in_reply_to_status_id": null,
   "in_reply_to_status_id_str": null,
   "in_reply_to_user_id": null,
   "in_reply_to_user_id_str": null,
   "in_reply_to_screen_name": null,
   "user": {
-    "id": 3428284210,
-    "id_str": "3428284210",
-    "name": "Ana",
-    "screen_name": "berbikinacurri",
-    "location": null,
+    "id": 711247513,
+    "id_str": "711247513",
+    "name": "Gerod Johnson♉️",
+    "screen_name": "SniperRod",
+    "location": "Winston-Salem, NC",
     "url": null,
     "description": null,
     "protected": false,
     "verified": false,
-    "followers_count": 152,
-    "friends_count": 330,
-    "listed_count": 2,
-    "favourites_count": 4519,
-    "statuses_count": 11013,
-    "created_at": "Mon Aug 17 14:44:31 +0000 2015",
+    "followers_count": 853,
+    "friends_count": 793,
+    "listed_count": 4,
+    "favourites_count": 1112,
+    "statuses_count": 8417,
+    "created_at": "Sun Jul 22 20:48:42 +0000 2012",
     "utc_offset": null,
     "time_zone": null,
     "geo_enabled": true,
-    "lang": "es",
+    "lang": "en",
     "contributors_enabled": false,
     "is_translator": false,
     "profile_background_color": "C0DEED",
@@ -45,8 +41,9 @@
     "profile_sidebar_fill_color": "DDEEF6",
     "profile_text_color": "333333",
     "profile_use_background_image": true,
-    "profile_image_url": "http://pbs.twimg.com/profile_images/846816178085466113/aYuntLYC_normal.jpg",
-    "profile_image_url_https": "https://pbs.twimg.com/profile_images/846816178085466113/aYuntLYC_normal.jpg",
+    "profile_image_url": "http://pbs.twimg.com/profile_images/831959177958457356/s0bpWT7R_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/831959177958457356/s0bpWT7R_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/711247513/1460011181",
     "default_profile": true,
     "default_profile_image": false,
     "following": null,
@@ -56,32 +53,32 @@
   "geo": null,
   "coordinates": null,
   "place": {
-    "id": "c113c1a6a18446bb",
-    "url": "https://api.twitter.com/1.1/geo/id/c113c1a6a18446bb.json",
+    "id": "24a53a1880093fa9",
+    "url": "https://api.twitter.com/1.1/geo/id/24a53a1880093fa9.json",
     "place_type": "city",
-    "name": "Fuenlabrada",
-    "full_name": "Fuenlabrada, España",
-    "country_code": "ES",
-    "country": "España",
+    "name": "Winston-Salem",
+    "full_name": "Winston-Salem, NC",
+    "country_code": "US",
+    "country": "United States",
     "bounding_box": {
       "type": "Polygon",
       "coordinates": [
         [
           [
-            -3.844073,
-            40.249636
+            -80.389019,
+            35.934126
           ],
           [
-            -3.844073,
-            40.327769
+            -80.389019,
+            36.240211
           ],
           [
-            -3.739655,
-            40.327769
+            -80.100949,
+            36.240211
           ],
           [
-            -3.739655,
-            40.249636
+            -80.100949,
+            35.934126
           ]
         ]
       ]
@@ -90,135 +87,17 @@
   },
   "contributors": null,
   "is_quote_status": false,
-  "extended_tweet": {
-    "full_text": "This is a tweet that the current user has already retweeted and liked.",
-    "display_text_range": [
-      0,
-      128
-    ],
-    "entities": {
-      "hashtags": [
-        {
-          "text": "patrimoniodetodos",
-          "indices": [
-            0,
-            18
-          ]
-        }
-      ],
-      "urls": [],
-      "user_mentions": [],
-      "symbols": [],
-      "media": [
-        {
-          "id": 856171904817913900,
-          "id_str": "856171904817913856",
-          "indices": [
-            129,
-            152
-          ],
-          "media_url": "http://pbs.twimg.com/media/C-G7z61XYAAmk2X.jpg",
-          "media_url_https": "https://pbs.twimg.com/media/C-G7z61XYAAmk2X.jpg",
-          "url": "https://t.co/LwbjCQamu8",
-          "display_url": "pic.twitter.com/LwbjCQamu8",
-          "expanded_url": "https://twitter.com/berbikinacurri/status/856171912724086786/photo/1",
-          "type": "photo",
-          "sizes": {
-            "large": {
-              "w": 500,
-              "h": 511,
-              "resize": "fit"
-            },
-            "medium": {
-              "w": 500,
-              "h": 511,
-              "resize": "fit"
-            },
-            "thumb": {
-              "w": 150,
-              "h": 150,
-              "resize": "crop"
-            },
-            "small": {
-              "w": 500,
-              "h": 511,
-              "resize": "fit"
-            }
-          }
-        }
-      ]
-    },
-    "extended_entities": {
-      "media": [
-        {
-          "id": 856171904817913900,
-          "id_str": "856171904817913856",
-          "indices": [
-            129,
-            152
-          ],
-          "media_url": "http://pbs.twimg.com/media/C-G7z61XYAAmk2X.jpg",
-          "media_url_https": "https://pbs.twimg.com/media/C-G7z61XYAAmk2X.jpg",
-          "url": "https://t.co/LwbjCQamu8",
-          "display_url": "pic.twitter.com/LwbjCQamu8",
-          "expanded_url": "https://twitter.com/berbikinacurri/status/856171912724086786/photo/1",
-          "type": "photo",
-          "sizes": {
-            "large": {
-              "w": 500,
-              "h": 511,
-              "resize": "fit"
-            },
-            "medium": {
-              "w": 500,
-              "h": 511,
-              "resize": "fit"
-            },
-            "thumb": {
-              "w": 150,
-              "h": 150,
-              "resize": "crop"
-            },
-            "small": {
-              "w": 500,
-              "h": 511,
-              "resize": "fit"
-            }
-          }
-        }
-      ]
-    }
-  },
-  "retweet_count": 12,
-  "favorite_count": 53,
+  "retweet_count": 1,
+  "favorite_count": 1,
   "entities": {
-    "hashtags": [
-      {
-        "text": "patrimoniodetodos",
-        "indices": [
-          0,
-          18
-        ]
-      }
-    ],
-    "urls": [
-      {
-        "url": "https://t.co/qlycg6vYOK",
-        "expanded_url": "https://twitter.com/i/web/status/856171912724086786",
-        "display_url": "twitter.com/i/web/status/8…",
-        "indices": [
-          117,
-          140
-        ]
-      }
-    ],
+    "hashtags": [],
+    "urls": [],
     "user_mentions": [],
     "symbols": []
   },
   "favorited": true,
   "retweeted": true,
-  "possibly_sensitive": false,
   "filter_level": "low",
-  "lang": "es",
-  "timestamp_ms": "1492962265555"
+  "lang": "en",
+  "timestamp_ms": "1492970609787"
 }
