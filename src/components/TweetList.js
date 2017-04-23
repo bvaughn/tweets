@@ -54,7 +54,7 @@ export default class TweetList extends Component {
                     deferredMeasurementCache={this._cache}
                     height={height}
                     onRowsRendered={onRowsRendered}
-                    overscanRowCount={5}
+                    overscanRowCount={1}
                     ref={this._setListRef}
                     rowCount={tweets.length + 1}
                     rowHeight={this._cache.rowHeight}
