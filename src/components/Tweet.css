@@ -34,6 +34,28 @@
   margin-top: 0.5rem;
   color: #aab8c2;
 }
-.Icon {
+
+.ReplyIcon {
+  cursor: pointer;
+}
+.ReplyIcon:hover {
+  color: #1da1f2;
+}
+
+.RetweetIcon {
+  cursor: pointer;
   margin-left: 3rem;
+}
+.RetweetIcon:hover,
+.RetweetIconActive {
+  color: #17bf63;
+}
+
+.FavoriteIcon {
+  cursor: pointer;
+  margin-left: 3rem;
+}
+.FavoriteIcon:hover,
+.FavoriteIconActive {
+  color: #e2264d;
 }

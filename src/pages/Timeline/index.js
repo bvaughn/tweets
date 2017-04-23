@@ -1,7 +1,6 @@
 import { h, Component, options } from 'preact';
-import styles from './Application.css';
-import LoadingIndicator from './LoadingIndicator';
-import TweetList from './TweetList';
+import LoadingIndicator from 'components/LoadingIndicator';
+import TweetList from 'components/TweetList';
 import TweetStream from './TweetStream';
 
 // Use requestAnimationFrame by default but allow URL param to disable.
@@ -9,7 +8,7 @@ options.debounceRendering = location.search.indexOf('raf=false') < 0
   ? requestAnimationFrame
   : null;
 
-export default class App extends Component {
+export default class Timeline extends Component {
   state = { tweets: [] };
 
   componentWillMount = () => {

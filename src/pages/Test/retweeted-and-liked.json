@@ -1,0 +1,224 @@
+{
+  "created_at": "Sun Apr 23 15:44:25 +0000 2017",
+  "id": 856171912724086800,
+  "id_str": "856171912724086786",
+  "text": "#patrimoniodetodos lee tanto como puedas,aprende,disfruta comparte un buen libro. Apaga la 📺 y el 📱 descubrirás tan… https://t.co/qlycg6vYOK",
+  "display_text_range": [
+    0,
+    140
+  ],
+  "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+  "truncated": true,
+  "in_reply_to_status_id": null,
+  "in_reply_to_status_id_str": null,
+  "in_reply_to_user_id": null,
+  "in_reply_to_user_id_str": null,
+  "in_reply_to_screen_name": null,
+  "user": {
+    "id": 3428284210,
+    "id_str": "3428284210",
+    "name": "Ana",
+    "screen_name": "berbikinacurri",
+    "location": null,
+    "url": null,
+    "description": null,
+    "protected": false,
+    "verified": false,
+    "followers_count": 152,
+    "friends_count": 330,
+    "listed_count": 2,
+    "favourites_count": 4519,
+    "statuses_count": 11013,
+    "created_at": "Mon Aug 17 14:44:31 +0000 2015",
+    "utc_offset": null,
+    "time_zone": null,
+    "geo_enabled": true,
+    "lang": "es",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "profile_background_color": "C0DEED",
+    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_tile": false,
+    "profile_link_color": "1DA1F2",
+    "profile_sidebar_border_color": "C0DEED",
+    "profile_sidebar_fill_color": "DDEEF6",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/846816178085466113/aYuntLYC_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/846816178085466113/aYuntLYC_normal.jpg",
+    "default_profile": true,
+    "default_profile_image": false,
+    "following": null,
+    "follow_request_sent": null,
+    "notifications": null
+  },
+  "geo": null,
+  "coordinates": null,
+  "place": {
+    "id": "c113c1a6a18446bb",
+    "url": "https://api.twitter.com/1.1/geo/id/c113c1a6a18446bb.json",
+    "place_type": "city",
+    "name": "Fuenlabrada",
+    "full_name": "Fuenlabrada, España",
+    "country_code": "ES",
+    "country": "España",
+    "bounding_box": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -3.844073,
+            40.249636
+          ],
+          [
+            -3.844073,
+            40.327769
+          ],
+          [
+            -3.739655,
+            40.327769
+          ],
+          [
+            -3.739655,
+            40.249636
+          ]
+        ]
+      ]
+    },
+    "attributes": {}
+  },
+  "contributors": null,
+  "is_quote_status": false,
+  "extended_tweet": {
+    "full_text": "This is a tweet that the current user has already retweeted and liked.",
+    "display_text_range": [
+      0,
+      128
+    ],
+    "entities": {
+      "hashtags": [
+        {
+          "text": "patrimoniodetodos",
+          "indices": [
+            0,
+            18
+          ]
+        }
+      ],
+      "urls": [],
+      "user_mentions": [],
+      "symbols": [],
+      "media": [
+        {
+          "id": 856171904817913900,
+          "id_str": "856171904817913856",
+          "indices": [
+            129,
+            152
+          ],
+          "media_url": "http://pbs.twimg.com/media/C-G7z61XYAAmk2X.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/C-G7z61XYAAmk2X.jpg",
+          "url": "https://t.co/LwbjCQamu8",
+          "display_url": "pic.twitter.com/LwbjCQamu8",
+          "expanded_url": "https://twitter.com/berbikinacurri/status/856171912724086786/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 500,
+              "h": 511,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 500,
+              "h": 511,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 500,
+              "h": 511,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 856171904817913900,
+          "id_str": "856171904817913856",
+          "indices": [
+            129,
+            152
+          ],
+          "media_url": "http://pbs.twimg.com/media/C-G7z61XYAAmk2X.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/C-G7z61XYAAmk2X.jpg",
+          "url": "https://t.co/LwbjCQamu8",
+          "display_url": "pic.twitter.com/LwbjCQamu8",
+          "expanded_url": "https://twitter.com/berbikinacurri/status/856171912724086786/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 500,
+              "h": 511,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 500,
+              "h": 511,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 500,
+              "h": 511,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "retweet_count": 12,
+  "favorite_count": 53,
+  "entities": {
+    "hashtags": [
+      {
+        "text": "patrimoniodetodos",
+        "indices": [
+          0,
+          18
+        ]
+      }
+    ],
+    "urls": [
+      {
+        "url": "https://t.co/qlycg6vYOK",
+        "expanded_url": "https://twitter.com/i/web/status/856171912724086786",
+        "display_url": "twitter.com/i/web/status/8…",
+        "indices": [
+          117,
+          140
+        ]
+      }
+    ],
+    "user_mentions": [],
+    "symbols": []
+  },
+  "favorited": true,
+  "retweeted": true,
+  "possibly_sensitive": false,
+  "filter_level": "low",
+  "lang": "es",
+  "timestamp_ms": "1492962265555"
+}

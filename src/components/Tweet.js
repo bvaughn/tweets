@@ -1,4 +1,6 @@
+import cn from 'classnames';
 import { h } from 'preact';
+import Linkify from 'react-linkify';
 import styles from './Tweet.css';
 
 export default function Tweet({ tweet }) {
@@ -30,13 +32,40 @@ export default function Tweet({ tweet }) {
           @{tweet.user.screen_name} • {datetime}
         </span>
       </a>
-      <div>{text}</div>
+      <br/>
+      <Linkify>{text}</Linkify>
       <div className={styles.Icons}>
-        <i className="fa fa-reply" aria-hidden="true" /> 0
-        <i className={`fa fa-retweet ${styles.Icon}`} aria-hidden="true" />
+        <i
+          aria-hidden='true'
+          className={cn(
+            'fa fa-reply',
+            styles.ReplyIcon
+          )}
+        />
+        {' '}
+        0
+        <i
+          aria-hidden='true'
+          className={cn(
+            'fa fa-retweet',
+            styles.RetweetIcon,
+            {
+              [styles.RetweetIconActive]: tweet.retweeted
+            }
+          )}
+        />
         {' '}
         {tweet.retweet_count}
-        <i className={`fa fa-heart ${styles.Icon}`} aria-hidden="true" />
+        <i
+          aria-hidden='true'
+          className={cn(
+            'fa fa-heart',
+            styles.FavoriteIcon,
+            {
+              [styles.FavoriteIconActive]: tweet.favorited
+            }
+          )}
+        />
         {' '}
         {tweet.favorite_count}
       </div>
