@@ -12,13 +12,21 @@ import styles from './TweetList.css';
 export default class TweetList extends Component {
   _cache = new CellMeasurerCache({ defaultHeight: 85, fixedWidth: true });
   _mostRecentWidth = 0;
+  _resizeAllFlag = false;
 
   componentDidUpdate(prevProps, prevState) {
-    if (this.props.tweets !== prevProps.tweets) {
+    if (
+      this._resizeAllFlag ||
+      this.props.disableMedia !== prevProps.disableMedia
+    ) {
+      this._resizeAllFlag = false;
+      this._cache.clearAll();
+      if (this._list) {
+        this._list.recomputeRowHeights();
+      }
+    } else if (this.props.tweets !== prevProps.tweets) {
       const index = prevProps.tweets.length;
-
       this._cache.clear(index, 0);
-
       if (this._list) {
         this._list.recomputeRowHeights(index);
       }
@@ -38,12 +46,13 @@ export default class TweetList extends Component {
           {({ onRowsRendered, registerChild }) => (
             <AutoSizer>
               {({ height, width }) => {
-                if (this._mostRecentWidth && this._mostRecentWidth !== width) {
-                  this._cache.clearAll();
+                if (
+                  this._mostRecentWidth &&
+                  this._mostRecentWidth !== width
+                ) {
+                  this._resizeAllFlag = true;
 
-                  if (this._list) {
-                    this._list.recomputeRowHeights();
-                  }
+                  setTimeout(this._resizeAll, 0);
                 }
 
                 this._mostRecentWidth = width;
@@ -59,7 +68,6 @@ export default class TweetList extends Component {
                     rowCount={tweets.length + 1}
                     rowHeight={this._cache.rowHeight}
                     rowRenderer={this._rowRenderer}
-                    style={{ contain: 'strict' }}
                     width={width}
                   />
                 );
@@ -76,7 +84,7 @@ export default class TweetList extends Component {
   };
 
   _rowRenderer = ({ index, isScrolling, key, parent, style }) => {
-    const tweets = this.props.tweets;
+    const { disableMedia, tweets } = this.props;
 
     let content;
 
@@ -84,7 +92,13 @@ export default class TweetList extends Component {
       content = <LoadingIndicator />;
     } else {
       const tweet = tweets[index];
-      content = <Tweet isScrolling={isScrolling} tweet={tweet} />;
+      content = (
+        <Tweet
+          disableMedia={disableMedia}
+          isScrolling={isScrolling}
+          tweet={tweet}
+        />
+      );
     }
 
     return (
@@ -101,6 +115,14 @@ export default class TweetList extends Component {
         </div>
       </CellMeasurer>
     );
+  };
+
+  _resizeAll = () => {
+    this._resizeAllFlag = false;
+    this._cache.clearAll();
+    if (this._list) {
+      this._list.recomputeRowHeights();
+    }
   };
 
   _setListRef = ref => {

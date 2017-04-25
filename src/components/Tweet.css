@@ -35,6 +35,17 @@
   border-radius: 5px;
 }
 
+.ImageMedia {
+  display: block;
+  border-radius: 0.25rem;
+  border: 1px solid #e6ecf0;
+  margin-top: 0.5rem;
+  width: 100%;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
 .Text {
   white-space: pre-wrap;
 }

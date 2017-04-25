@@ -38,14 +38,30 @@ function Demo({ title, tweet }) {
 
   return (
     <div>
-      <h5 className={styles.Header}>{title}</h5>
-      <div className={styles.TweetRow}>
-        <div className={styles.TweetWrapper}>
-          <Tweet tweet={tweet} isScrolling={true} />
-        </div>
-        <div className={styles.TweetWrapper}>
-          <Tweet tweet={tweet} isScrolling={false} />
-        </div>
+      <h3 className={styles.Header}>{title}</h3>
+      <h5>Loading</h5>
+      <div className={styles.TweetWrapper}>
+        <Tweet
+          disableMedia={false}
+          isScrolling={true}
+          tweet={tweet}
+        />
+      </div>
+      <h5>Media disabled</h5>
+      <div className={styles.TweetWrapper}>
+        <Tweet
+          disableMedia={true}
+          isScrolling={false}
+          tweet={tweet}
+        />
+      </div>
+      <h5>Loaded</h5>
+      <div className={styles.TweetWrapper}>
+        <Tweet
+          disableMedia={false}
+          isScrolling={false}
+          tweet={tweet}
+        />
       </div>
     </div>
   )

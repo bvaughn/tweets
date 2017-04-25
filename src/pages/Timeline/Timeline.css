@@ -1,0 +1,54 @@
+.Timeline {
+  height: 100%;
+}
+
+.Header {
+  position: absolute;
+  top: 0;
+  height: 75px;
+  width: 100%;
+  line-height: 44px;
+  background-color: white;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  color: #66757f;
+}
+
+.HeaderAlignment {
+  position: relative;
+  width: 890px;
+  max-width: 100%;
+  padding: 0 1rem;
+  overflow-y: hidden;
+  margin: 0 auto;
+}
+
+.Right {
+  float: right;
+  text-align: left;
+}
+
+.ShowMediaIconActive {
+  color: #17bf63;
+}
+
+.IconButton {
+  line-height: 75px;
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.IconButton:hover {
+  color: #0084B4;
+}
+
+.SignInButton {
+  margin-left: 1rem;
+}
+
+.ContentWrapper {
+  position: absolute;
+  top: 75px;
+  bottom: 0;
+  width: 100%;
+}

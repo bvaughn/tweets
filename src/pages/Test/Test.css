@@ -1,16 +1,11 @@
 .Test {
-  width: 1180px;
+  width: 590px;
   max-width: 100%;
   margin: 0 auto;
 }
 
 .Header {
   text-align: center;
-}
-
-.TweetRow {
-  display: flex;
-  flex-direction: row;
 }
 
 .TweetWrapper {
