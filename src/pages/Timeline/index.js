@@ -49,7 +49,10 @@ export default class Timeline extends Component {
 
             <div className={styles.Right}>
               {/* TODO Add link to sign-in state */}
-              <a className={cn(styles.IconButton, styles.SignInButton)}>
+              <a
+                className={cn(styles.IconButton, styles.SignInButton)}
+                href={config.tweetsServerUrl + '/login'}
+              >
                 <i className='fa fa-lg fa-sign-in' />
               </a>
             </div>
