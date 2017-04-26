@@ -15,7 +15,7 @@ export default class Timeline extends Component {
     tweets: []
   };
 
-  componentWillMount() {
+  componentDidMount() {
     this._tweetStream = new TweetStream();
     this._fetchTweets();
   }
