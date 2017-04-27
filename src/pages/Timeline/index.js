@@ -23,7 +23,7 @@ export default class Timeline extends Component {
   }
 
   render() {
-    const { disableMedia, tweets } = this.state;
+    const { disableMedia, isLoggedIn, tweets } = this.state;
 
     let content;
     if (tweets.length === 0) {
@@ -50,13 +50,20 @@ export default class Timeline extends Component {
             </a>
 
             <div className={styles.Right}>
-              {/* TODO Add link to sign-in state */}
-              <a
-                className={cn(styles.IconButton, styles.SignInButton)}
-                href={config.tweetsServerUrl + '/login'}
-              >
-                <i className="fa fa-lg fa-sign-in" />
-              </a>
+              {isLoggedIn &&
+                <a
+                  className={cn(styles.IconButton, styles.SignInButton)}
+                  href={config.tweetsServerUrl + '/logout'}
+                >
+                  <i className="fa fa-lg fa-sign-out" />
+                </a>}
+              {!isLoggedIn &&
+                <a
+                  className={cn(styles.IconButton, styles.SignInButton)}
+                  href={config.tweetsServerUrl + '/login'}
+                >
+                  <i className="fa fa-lg fa-sign-in" />
+                </a>}
             </div>
           </div>
         </div>
@@ -70,31 +77,44 @@ export default class Timeline extends Component {
 
   _fetchTweets = () => {
     let { isLoggedIn, tweets } = this.state;
-    let url = config.tweetsServerUrl + '/tweets/0';
+
+    let url;
     if (isLoggedIn && tweets.length) {
       const lastIndex = tweets.length - 1;
       const oldestTweet = tweets[lastIndex];
       url = config.tweetsServerUrl + '/tweets/' + oldestTweet.id;
+    } else {
+      url = config.tweetsServerUrl + '/tweets/';
     }
+
     fetch(url, { credentials: 'include' })
-      .then(response => response.json())
-      .then(loggedInTweets => {
-        if (loggedInTweets.length) {
-          if (isLoggedIn) {
-            tweets = tweets.concat(loggedInTweets);
-          } else {
-            tweets = loggedInTweets;
-          }
-          isLoggedIn = true;
-          this.setState({ isLoggedIn, tweets });
+      .then(response => {
+        if (response.status === 401) {
+          throw Error('Unauthorized');
         } else {
-          if (!this._tweetStream.loading) {
-            this._tweetStream.load(tweets => {
-              tweets = this.state.tweets.concat(tweets);
-              this.setState({ tweets });
-            });
-          }
+          return response.json();
         }
-      });
+      })
+      .then(newTweets => {
+        tweets = isLoggedIn ? tweets.concat(newTweets) : newTweets;
+
+        this.setState({
+          isLoggedIn: true,
+          tweets,
+        });
+      })
+      .catch(this._fetchTweetStream);
+  };
+
+  _fetchTweetStream = () => {
+    if (this._tweetStream.loading) {
+      return;
+    }
+
+    this._tweetStream.load(newTweets => {
+      const tweets = this.state.tweets.concat(newTweets);
+
+      this.setState({ tweets });
+    });
   };
 }
