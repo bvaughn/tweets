@@ -4,6 +4,7 @@ import LoadingIndicator from 'components/LoadingIndicator';
 import TweetList from 'components/TweetList';
 import TweetStream from './TweetStream';
 import styles from './Timeline.css';
+import config from '../../config';
 
 // Use requestAnimationFrame by default but allow URL param to disable.
 options.debounceRendering = location.search.indexOf('raf=false') < 0
@@ -12,10 +13,11 @@ options.debounceRendering = location.search.indexOf('raf=false') < 0
 
 export default class Timeline extends Component {
   state = {
+    isLoggedIn: false,
     tweets: []
   };
 
-  componentWillMount() {
+  componentDidMount() {
     this._tweetStream = new TweetStream();
     this._fetchTweets();
   }
@@ -49,7 +51,10 @@ export default class Timeline extends Component {
 
             <div className={styles.Right}>
               {/* TODO Add link to sign-in state */}
-              <a className={cn(styles.IconButton, styles.SignInButton)}>
+              <a
+                className={cn(styles.IconButton, styles.SignInButton)}
+                href={config.tweetsServerUrl + '/login'}
+              >
                 <i className='fa fa-lg fa-sign-in' />
               </a>
             </div>
@@ -64,11 +69,31 @@ export default class Timeline extends Component {
   }
 
   _fetchTweets = () => {
-    if (!this._tweetStream.loading) {
-      this._tweetStream.load(tweets => {
-        tweets = this.state.tweets.concat(tweets);
-        this.setState({ tweets });
-      });
+    let { isLoggedIn, tweets } = this.state;
+    let url = config.tweetsServerUrl + '/tweets/0';
+    if (isLoggedIn && tweets.length) {
+      const lastIndex = tweets.length - 1;
+      const oldestTweet = tweets[lastIndex];
+      url = config.tweetsServerUrl + '/tweets/' + oldestTweet.id;
     }
+    fetch(url, { credentials: 'include' }).then(response => response.json())
+    .then(loggedInTweets => {
+      if (loggedInTweets.length) {
+        if(isLoggedIn) {
+          tweets = tweets.concat(loggedInTweets);
+        } else {
+          tweets = loggedInTweets;
+        }
+        isLoggedIn = true;
+        this.setState({ isLoggedIn, tweets });
+      } else {
+        if (!this._tweetStream.loading) {
+          this._tweetStream.load(tweets => {
+            tweets = this.state.tweets.concat(tweets);
+            this.setState({ tweets });
+          });
+        }
+      }
+    });
   };
 }
