@@ -14,7 +14,7 @@ options.debounceRendering = location.search.indexOf('raf=false') < 0
 export default class Timeline extends Component {
   state = {
     isLoggedIn: false,
-    tweets: []
+    tweets: [],
   };
 
   componentDidMount() {
@@ -44,9 +44,9 @@ export default class Timeline extends Component {
           <div className={styles.HeaderAlignment}>
             <a
               className={styles.IconButton}
-              href='https://github.com/bvaughn/tweets'
+              href="https://github.com/bvaughn/tweets"
             >
-              <i className='fa fa-lg fa-code' />
+              <i className="fa fa-lg fa-code" />
             </a>
 
             <div className={styles.Right}>
@@ -55,7 +55,7 @@ export default class Timeline extends Component {
                 className={cn(styles.IconButton, styles.SignInButton)}
                 href={config.tweetsServerUrl + '/login'}
               >
-                <i className='fa fa-lg fa-sign-in' />
+                <i className="fa fa-lg fa-sign-in" />
               </a>
             </div>
           </div>
@@ -76,24 +76,25 @@ export default class Timeline extends Component {
       const oldestTweet = tweets[lastIndex];
       url = config.tweetsServerUrl + '/tweets/' + oldestTweet.id;
     }
-    fetch(url, { credentials: 'include' }).then(response => response.json())
-    .then(loggedInTweets => {
-      if (loggedInTweets.length) {
-        if(isLoggedIn) {
-          tweets = tweets.concat(loggedInTweets);
+    fetch(url, { credentials: 'include' })
+      .then(response => response.json())
+      .then(loggedInTweets => {
+        if (loggedInTweets.length) {
+          if (isLoggedIn) {
+            tweets = tweets.concat(loggedInTweets);
+          } else {
+            tweets = loggedInTweets;
+          }
+          isLoggedIn = true;
+          this.setState({ isLoggedIn, tweets });
         } else {
-          tweets = loggedInTweets;
+          if (!this._tweetStream.loading) {
+            this._tweetStream.load(tweets => {
+              tweets = this.state.tweets.concat(tweets);
+              this.setState({ tweets });
+            });
+          }
         }
-        isLoggedIn = true;
-        this.setState({ isLoggedIn, tweets });
-      } else {
-        if (!this._tweetStream.loading) {
-          this._tweetStream.load(tweets => {
-            tweets = this.state.tweets.concat(tweets);
-            this.setState({ tweets });
-          });
-        }
-      }
-    });
+      });
   };
 }

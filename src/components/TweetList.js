@@ -46,10 +46,7 @@ export default class TweetList extends Component {
           {({ onRowsRendered, registerChild }) => (
             <AutoSizer>
               {({ height, width }) => {
-                if (
-                  this._mostRecentWidth &&
-                  this._mostRecentWidth !== width
-                ) {
+                if (this._mostRecentWidth && this._mostRecentWidth !== width) {
                   this._resizeAllFlag = true;
 
                   setTimeout(this._resizeAll, 0);

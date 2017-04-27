@@ -13,11 +13,11 @@ import styles from './Tweet.css';
 const ROUGH_ESTIMATE_IMAGE_WIDTH = 550;
 
 const AUTO_LINK_OPTIONS = {
-  'urlClass':styles.Link,
-  'listClass':styles.Link,
-  'usernameClass':styles.Link,
-  'hashtagClass':styles.Link,
-  'cashtagClass': styles.Link
+  urlClass: styles.Link,
+  listClass: styles.Link,
+  usernameClass: styles.Link,
+  hashtagClass: styles.Link,
+  cashtagClass: styles.Link,
 };
 
 export default class Tweet extends Component {
@@ -25,7 +25,7 @@ export default class Tweet extends Component {
     super(props);
 
     this.state = {
-      mediaExpanded: false
+      mediaExpanded: false,
     };
   }
 
@@ -67,7 +67,9 @@ export default class Tweet extends Component {
       text = text.substr(lastMention.indices[1] + 1);
 
       if (isScrolling) {
-        replyingTo = extractedMentions.map(mention => `@${mention.screenName} `);
+        replyingTo = extractedMentions.map(
+          mention => `@${mention.screenName} `
+        );
       } else {
         replyingTo = extractedMentions.reduce((reduced, mention) => {
           reduced.push(
@@ -85,7 +87,7 @@ export default class Tweet extends Component {
     }
 
     if (!isScrolling) {
-      text = t.autoLink(text, AUTO_LINK_OPTIONS)
+      text = t.autoLink(text, AUTO_LINK_OPTIONS);
     }
 
     // Upscale user profile images; for some reason the API sends blurry low-res pictures.
@@ -96,14 +98,11 @@ export default class Tweet extends Component {
 
     return (
       <div className={styles.Tweet}>
-        {retweeter && (
+        {retweeter &&
           <div className={styles.Retweeted}>
             <i
-              aria-hidden='true'
-              className={cn(
-                'fa fa-retweet',
-                styles.RetweetedIcon
-              )}
+              aria-hidden="true"
+              className={cn('fa fa-retweet', styles.RetweetedIcon)}
             />
             {' '}
             <a
@@ -112,27 +111,19 @@ export default class Tweet extends Component {
             >
               {retweeter.name}
             </a> Retweeted
-          </div>
-        )}
+          </div>}
         <a
           className={styles.Link}
           href={`https://twitter.com/${tweet.user.screen_name}`}
         >
-          <img
-            className={styles.ProfileImage}
-            src={profileImageSource}
-          />
+          <img className={styles.ProfileImage} src={profileImageSource} />
           <strong>{tweet.user.name}</strong>
           {' '}
-          {tweet.user.verified && (
+          {tweet.user.verified &&
             <i
-              aria-hidden='true'
-              className={cn(
-                'fa fa-check-circle',
-                styles.VerifiedIcon
-              )}
-            />
-          )}
+              aria-hidden="true"
+              className={cn('fa fa-check-circle', styles.VerifiedIcon)}
+            />}
           {' '}
           <span className={styles.Username}>
             @{tweet.user.screen_name}
@@ -145,50 +136,38 @@ export default class Tweet extends Component {
             </a>
           </span>
         </a>
-        {replyingTo && (
+        {replyingTo &&
           <div className={styles.ReplyingTo}>
             Replying to {replyingTo}
-          </div>
-        )}
+          </div>}
 
         <div
           className={styles.Text}
-          dangerouslySetInnerHTML={{ __html: text}}
-        ></div>
+          dangerouslySetInnerHTML={{ __html: text }}
+        />
 
         {this._renderMedia()}
 
         <div className={styles.Icons}>
           <i
-            aria-hidden='true'
-            className={cn(
-              'fa fa-reply',
-              styles.ReplyIcon
-            )}
+            aria-hidden="true"
+            className={cn('fa fa-reply', styles.ReplyIcon)}
           />
           {' '}
           0
           <i
-            aria-hidden='true'
-            className={cn(
-              'fa fa-retweet',
-              styles.RetweetIcon,
-              {
-                [styles.RetweetIconActive]: tweet.retweeted
-              }
-            )}
+            aria-hidden="true"
+            className={cn('fa fa-retweet', styles.RetweetIcon, {
+              [styles.RetweetIconActive]: tweet.retweeted,
+            })}
           />
           {' '}
           {tweet.retweet_count}
           <i
-            aria-hidden='true'
-            className={cn(
-              'fa fa-heart',
-              styles.FavoriteIcon,
-              {
-                [styles.FavoriteIconActive]: tweet.favorited
-              }
-            )}
+            aria-hidden="true"
+            className={cn('fa fa-heart', styles.FavoriteIcon, {
+              [styles.FavoriteIconActive]: tweet.favorited,
+            })}
           />
           {' '}
           {tweet.favorite_count}
@@ -210,12 +189,12 @@ export default class Tweet extends Component {
     } else {
       const media = tweet.extended_entities.media[0];
 
-      switch(media.type) {
+      switch (media.type) {
         case 'animated_gif':
         case 'photo':
           return this._renderMediaPhoto();
         default:
-          console.warn(`Unknown media type: ${media.type}`)
+          console.warn(`Unknown media type: ${media.type}`);
       }
     }
   }
@@ -225,10 +204,7 @@ export default class Tweet extends Component {
 
     const media = tweet.extended_entities.media[0];
     const aspectRatio = media.sizes.small.h / media.sizes.small.w;
-    const height = Math.min(
-      250,
-      ROUGH_ESTIMATE_IMAGE_WIDTH * aspectRatio
-    );
+    const height = Math.min(250, ROUGH_ESTIMATE_IMAGE_WIDTH * aspectRatio);
 
     return (
       <a
@@ -236,9 +212,9 @@ export default class Tweet extends Component {
         href={media.expanded_url}
         style={{
           backgroundImage: `url(${media.media_url_https})`,
-          height
+          height,
         }}
-      ></a>
+      />
     );
   }
 
