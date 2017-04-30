@@ -1,4 +1,5 @@
 import { h, Component } from 'preact';
+import PropTypes from 'prop-types';
 import AutoSizer from 'react-virtualized/dist/commonjs/AutoSizer';
 import CellMeasurer, {
   CellMeasurerCache,
@@ -13,6 +14,13 @@ export default class TweetList extends Component {
   _cache = new CellMeasurerCache({ defaultHeight: 85, fixedWidth: true });
   _mostRecentWidth = 0;
   _resizeAllFlag = false;
+
+  static propTypes = {
+    authenticated: PropTypes.bool.isRequired,
+    disableMedia: PropTypes.bool.isRequired,
+    fetchTweets: PropTypes.func.isRequired,
+    tweet: PropTypes.object.isRequired
+  };
 
   componentDidUpdate(prevProps, prevState) {
     if (
@@ -81,7 +89,7 @@ export default class TweetList extends Component {
   };
 
   _rowRenderer = ({ index, isScrolling, key, parent, style }) => {
-    const { disableMedia, tweets } = this.props;
+    const { authenticated, disableMedia, tweets } = this.props;
 
     let content;
 
@@ -91,6 +99,7 @@ export default class TweetList extends Component {
       const tweet = tweets[index];
       content = (
         <Tweet
+          authenticated={authenticated}
           disableMedia={disableMedia}
           isScrolling={isScrolling}
           tweet={tweet}

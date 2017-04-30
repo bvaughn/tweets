@@ -13,7 +13,7 @@ options.debounceRendering = location.search.indexOf('raf=false') < 0
 
 export default class Timeline extends Component {
   state = {
-    isLoggedIn: false,
+    authenticated: false,
     tweets: [],
   };
 
@@ -23,7 +23,7 @@ export default class Timeline extends Component {
   }
 
   render() {
-    const { disableMedia, isLoggedIn, tweets } = this.state;
+    const { authenticated, disableMedia, tweets } = this.state;
 
     let content;
     if (tweets.length === 0) {
@@ -31,6 +31,7 @@ export default class Timeline extends Component {
     } else {
       content = (
         <TweetList
+          authenticated={authenticated}
           disableMedia={true /* TODO Add profile setting later? */}
           fetchTweets={this._fetchTweets}
           tweets={tweets}
@@ -50,14 +51,14 @@ export default class Timeline extends Component {
             </a>
 
             <div className={styles.Right}>
-              {isLoggedIn &&
+              {authenticated &&
                 <a
                   className={cn(styles.IconButton, styles.SignInButton)}
                   href={config.tweetsServerUrl + '/logout'}
                 >
                   <i className="fa fa-lg fa-sign-out" />
                 </a>}
-              {!isLoggedIn &&
+              {!authenticated &&
                 <a
                   className={cn(styles.IconButton, styles.SignInButton)}
                   href={config.tweetsServerUrl + '/login'}
@@ -76,10 +77,10 @@ export default class Timeline extends Component {
   }
 
   _fetchTweets = () => {
-    let { isLoggedIn, tweets } = this.state;
+    let { authenticated, tweets } = this.state;
 
     let url;
-    if (isLoggedIn && tweets.length) {
+    if (authenticated && tweets.length) {
       const lastIndex = tweets.length - 1;
       const oldestTweet = tweets[lastIndex];
       url = config.tweetsServerUrl + '/tweets/' + oldestTweet.id;
@@ -96,10 +97,10 @@ export default class Timeline extends Component {
         }
       })
       .then(newTweets => {
-        tweets = isLoggedIn ? tweets.concat(newTweets) : newTweets;
+        tweets = authenticated ? tweets.concat(newTweets) : newTweets;
 
         this.setState({
-          isLoggedIn: true,
+          authenticated: true,
           tweets,
         });
       })

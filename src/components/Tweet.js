@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import { h, Component } from 'preact';
+import PropTypes from 'prop-types';
 import shallowCompare from 'preact-shallow-compare';
 import t from 'twitter-text';
 import styles from './Tweet.css';
@@ -7,7 +8,6 @@ import styles from './Tweet.css';
 // TODO Support entities: https://dev.twitter.com/overview/api/entities
 // + inline media ~ extended_tweet.entities.media
 
-// TODO Show "Retweeted" header and icon
 // TODO Handle retweeted case (with custom text or not)
 
 const ROUGH_ESTIMATE_IMAGE_WIDTH = 550;
@@ -21,6 +21,13 @@ const AUTO_LINK_OPTIONS = {
 };
 
 export default class Tweet extends Component {
+  static propTypes = {
+    authenticated: PropTypes.bool.isRequired,
+    disableMedia: PropTypes.bool.isRequired,
+    isScrolling: PropTypes.bool.isRequired,
+    tweet: PropTypes.object.isRequired
+  };
+
   constructor(props) {
     super(props);
 
@@ -34,7 +41,7 @@ export default class Tweet extends Component {
   }
 
   render() {
-    const { disableMedia, isScrolling } = this.props;
+    const { authenticated, disableMedia, isScrolling } = this.props;
 
     let tweet = this.props.tweet;
     let retweeter;
@@ -148,30 +155,32 @@ export default class Tweet extends Component {
 
         {this._renderMedia()}
 
-        <div className={styles.Icons}>
-          <i
-            aria-hidden="true"
-            className={cn('fa fa-reply', styles.ReplyIcon)}
-          />
-          {' '}
-          0
-          <i
-            aria-hidden="true"
-            className={cn('fa fa-retweet', styles.RetweetIcon, {
-              [styles.RetweetIconActive]: tweet.retweeted,
-            })}
-          />
-          {' '}
-          {tweet.retweet_count}
-          <i
-            aria-hidden="true"
-            className={cn('fa fa-heart', styles.FavoriteIcon, {
-              [styles.FavoriteIconActive]: tweet.favorited,
-            })}
-          />
-          {' '}
-          {tweet.favorite_count}
-        </div>
+        {authenticated && (
+          <div className={styles.Icons}>
+            <i
+              aria-hidden="true"
+              className={cn('fa fa-reply', styles.ReplyIcon)}
+            />
+            {' '}
+            0
+            <i
+              aria-hidden="true"
+              className={cn('fa fa-retweet', styles.RetweetIcon, {
+                [styles.RetweetIconActive]: tweet.retweeted,
+              })}
+            />
+            {' '}
+            {tweet.retweet_count}
+            <i
+              aria-hidden="true"
+              className={cn('fa fa-heart', styles.FavoriteIcon, {
+                [styles.FavoriteIconActive]: tweet.favorited,
+              })}
+            />
+            {' '}
+            {tweet.favorite_count}
+          </div>
+        )}
       </div>
     );
   }
