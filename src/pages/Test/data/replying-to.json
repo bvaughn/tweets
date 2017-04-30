@@ -1,128 +1,141 @@
 {
-  "created_at": "Sun Apr 23 18:02:08 +0000 2017",
-  "id": 856206571935850500,
-  "id_str": "856206571935850497",
-  "text": "@mish7al @AliAlqarawy فعلا اهم نقطة❤️",
-  "display_text_range": [
-    22,
-    37
-  ],
-  "source": "<a href=\"http://tapbots.com/tweetbot\" rel=\"nofollow\">Tweetbot for iΟS</a>",
-  "truncated": false,
-  "in_reply_to_status_id": 856205327645233200,
-  "in_reply_to_status_id_str": "856205327645233152",
-  "in_reply_to_user_id": 18718966,
-  "in_reply_to_user_id_str": "18718966",
-  "in_reply_to_screen_name": "mish7al",
-  "user": {
-    "id": 208489715,
-    "id_str": "208489715",
-    "name": "Abdulrahman Alsaif🌟",
-    "screen_name": "A_alsaif_",
-    "location": "بصدد تشكيل لجنة لتحديد الموقع",
-    "url": "https://aalsaif1.wordpress.com",
-    "description": "CS Student - #Gamer - أقدس الCyborgs ولست منهم - 👊🏻OraOraOra👊🏻 - أكره \"Omega-Force\"-رابط المدونة⬇️",
-    "protected": false,
-    "verified": false,
-    "followers_count": 605,
-    "friends_count": 154,
-    "listed_count": 11,
-    "favourites_count": 359,
-    "statuses_count": 12466,
-    "created_at": "Wed Oct 27 11:18:01 +0000 2010",
-    "utc_offset": 10800,
-    "time_zone": "Riyadh",
-    "geo_enabled": true,
-    "lang": "ar",
-    "contributors_enabled": false,
-    "is_translator": false,
-    "profile_background_color": "022330",
-    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
-    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
-    "profile_background_tile": false,
-    "profile_link_color": "0084B4",
-    "profile_sidebar_border_color": "A8C7F7",
-    "profile_sidebar_fill_color": "C0DFEC",
-    "profile_text_color": "333333",
-    "profile_use_background_image": true,
-    "profile_image_url": "http://pbs.twimg.com/profile_images/853692482894397440/YY-e7r79_normal.jpg",
-    "profile_image_url_https": "https://pbs.twimg.com/profile_images/853692482894397440/YY-e7r79_normal.jpg",
-    "profile_banner_url": "https://pbs.twimg.com/profile_banners/208489715/1481498861",
-    "default_profile": false,
-    "default_profile_image": false,
-    "following": null,
-    "follow_request_sent": null,
-    "notifications": null
-  },
-  "geo": null,
-  "coordinates": null,
-  "place": {
-    "id": "01bf5c1e56ac186d",
-    "url": "https://api.twitter.com/1.1/geo/id/01bf5c1e56ac186d.json",
-    "place_type": "city",
-    "name": "الرياض",
-    "full_name": "الرياض, المملكة العربية السعودية",
-    "country_code": "SA",
-    "country": "المملكة العربية السعودية",
-    "bounding_box": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            46.304398,
-            24.332068
-          ],
-          [
-            46.304398,
-            25.111819
-          ],
-          [
-            47.065756,
-            25.111819
-          ],
-          [
-            47.065756,
-            24.332068
-          ]
-        ]
-      ]
-    },
-    "attributes": {}
-  },
-  "contributors": null,
-  "is_quote_status": false,
-  "retweet_count": 0,
-  "favorite_count": 0,
+  "created_at": "Sun Apr 30 17:41:49 +0000 2017",
+  "id": 858738172624162800,
+  "id_str": "858738172624162816",
+  "text": "@dan_abramov @andrewingram @AdamRackis @knitcodemonkey I think the docs are great, no reason to bring up how to \"br… https://t.co/KXcISzJz2A",
+  "truncated": true,
   "entities": {
     "hashtags": [],
-    "urls": [],
+    "symbols": [],
     "user_mentions": [
       {
-        "screen_name": "mish7al",
-        "name": "مشحل",
-        "id": 18718966,
-        "id_str": "18718966",
+        "screen_name": "dan_abramov",
+        "name": "Dan Abramov",
+        "id": 70345946,
+        "id_str": "70345946",
         "indices": [
           0,
-          8
+          12
         ]
       },
       {
-        "screen_name": "AliAlqarawy",
-        "name": "علي القرعاوي👨🏻‍🌾",
-        "id": 946365019,
-        "id_str": "946365019",
+        "screen_name": "andrewingram",
+        "name": "andrewingram",
+        "id": 9164512,
+        "id_str": "9164512",
         "indices": [
-          9,
-          21
+          13,
+          26
+        ]
+      },
+      {
+        "screen_name": "AdamRackis",
+        "name": "Adam Rackis",
+        "id": 68567860,
+        "id_str": "68567860",
+        "indices": [
+          27,
+          38
+        ]
+      },
+      {
+        "screen_name": "knitcodemonkey",
+        "name": "Jen Luker",
+        "id": 769375158381318100,
+        "id_str": "769375158381318144",
+        "indices": [
+          39,
+          54
         ]
       }
     ],
-    "symbols": []
+    "urls": [
+      {
+        "url": "https://t.co/KXcISzJz2A",
+        "expanded_url": "https://twitter.com/i/web/status/858738172624162816",
+        "display_url": "twitter.com/i/web/status/8…",
+        "indices": [
+          117,
+          140
+        ]
+      }
+    ]
   },
+  "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  "in_reply_to_status_id": 858737668598976500,
+  "in_reply_to_status_id_str": "858737668598976512",
+  "in_reply_to_user_id": 70345946,
+  "in_reply_to_user_id_str": "70345946",
+  "in_reply_to_screen_name": "dan_abramov",
+  "user": {
+    "id": 16468446,
+    "id_str": "16468446",
+    "name": "Ryan Florence 👍🏼",
+    "screen_name": "ryanflorence",
+    "location": "Seattle, WA",
+    "description": "Co-Author React Router, Co-Owner React Training. Junior Developer for Life.",
+    "url": "https://t.co/4rXcvLLxP8",
+    "entities": {
+      "url": {
+        "urls": [
+          {
+            "url": "https://t.co/4rXcvLLxP8",
+            "expanded_url": "http://reacttraining.com",
+            "display_url": "reacttraining.com",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      },
+      "description": {
+        "urls": []
+      }
+    },
+    "protected": false,
+    "followers_count": 22724,
+    "friends_count": 246,
+    "listed_count": 941,
+    "created_at": "Fri Sep 26 14:41:39 +0000 2008",
+    "favourites_count": 5148,
+    "utc_offset": -21600,
+    "time_zone": "Mountain Time (US & Canada)",
+    "geo_enabled": false,
+    "verified": false,
+    "statuses_count": 32599,
+    "lang": "en",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": false,
+    "profile_background_color": "C0DEED",
+    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_tile": false,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/833804425822998529/Ng6B18iX_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/833804425822998529/Ng6B18iX_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/16468446/1487701699",
+    "profile_link_color": "1DA1F2",
+    "profile_sidebar_border_color": "C0DEED",
+    "profile_sidebar_fill_color": "DDEEF6",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "has_extended_profile": true,
+    "default_profile": true,
+    "default_profile_image": false,
+    "following": true,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "none"
+  },
+  "geo": null,
+  "coordinates": null,
+  "place": null,
+  "contributors": null,
+  "is_quote_status": false,
+  "retweet_count": 0,
+  "favorite_count": 2,
   "favorited": false,
   "retweeted": false,
-  "filter_level": "low",
-  "lang": "ar",
-  "timestamp_ms": "1492970528955"
+  "lang": "en"
 }

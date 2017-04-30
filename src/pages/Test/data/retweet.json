@@ -1,184 +1,200 @@
 {
-    "contributors": null,
-    "coordinates": null,
-    "created_at": "Fri Jan 01 23:32:39 +0000 2016",
-    "entities": {
-        "hashtags": [],
-        "symbols": [],
-        "urls": [],
-        "user_mentions": [
-            {
-                "id": 3130887501,
-                "id_str": "3130887501",
-                "indices": [
-                    3,
-                    13
-                ],
-                "name": "Zodiacs",
-                "screen_name": "signskpop"
-            }
+  "created_at": "Sun Apr 30 18:18:40 +0000 2017",
+  "id": 858747444057604100,
+  "id_str": "858747444057604096",
+  "text": "RT @jongold: One of the primary drivers for me joining Airbnb is that we introduce just enough screentime in your life to get you outside &amp;…",
+  "truncated": false,
+  "entities": {
+    "hashtags": [],
+    "symbols": [],
+    "user_mentions": [
+      {
+        "screen_name": "jongold",
+        "name": "@jongold",
+        "id": 14199907,
+        "id_str": "14199907",
+        "indices": [
+          3,
+          11
         ]
+      }
+    ],
+    "urls": []
+  },
+  "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+  "in_reply_to_status_id": null,
+  "in_reply_to_status_id_str": null,
+  "in_reply_to_user_id": null,
+  "in_reply_to_user_id_str": null,
+  "in_reply_to_screen_name": null,
+  "user": {
+    "id": 606973150,
+    "id_str": "606973150",
+    "name": "Leland Richardson",
+    "screen_name": "intelligibabble",
+    "location": "San Francisco, CA",
+    "description": "Software Engineer @Airbnb. I like learning, discussing, and diving into challenges.",
+    "url": "http://t.co/80xVNhoS6i",
+    "entities": {
+      "url": {
+        "urls": [
+          {
+            "url": "http://t.co/80xVNhoS6i",
+            "expanded_url": "http://www.intelligiblebabble.com",
+            "display_url": "intelligiblebabble.com",
+            "indices": [
+              0,
+              22
+            ]
+          }
+        ]
+      },
+      "description": {
+        "urls": []
+      }
     },
-    "favorite_count": 0,
-    "favorited": false,
-    "geo": null,
-    "id": 683068346670120962,
-    "id_str": "683068346670120962",
-    "in_reply_to_screen_name": null,
-    "in_reply_to_status_id": null,
-    "in_reply_to_status_id_str": null,
-    "in_reply_to_user_id": null,
-    "in_reply_to_user_id_str": null,
-    "is_quote_status": false,
+    "protected": false,
+    "followers_count": 3662,
+    "friends_count": 584,
+    "listed_count": 167,
+    "created_at": "Wed Jun 13 07:09:07 +0000 2012",
+    "favourites_count": 3104,
+    "utc_offset": -14400,
+    "time_zone": "Eastern Time (US & Canada)",
+    "geo_enabled": false,
+    "verified": false,
+    "statuses_count": 5068,
     "lang": "en",
-    "metadata": {
-        "iso_language_code": "en",
-        "result_type": "recent"
-    },
-    "place": null,
-    "retweet_count": 104,
-    "retweeted": false,
-    "retweeted_status": {
-        "contributors": null,
-        "coordinates": null,
-        "created_at": "Sun Dec 27 04:38:12 +0000 2015",
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "urls": [],
-            "user_mentions": []
-        },
-        "favorite_count": 120,
-        "favorited": false,
-        "geo": null,
-        "id": 680970913945399296,
-        "id_str": "680970913945399296",
-        "in_reply_to_screen_name": null,
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "is_quote_status": false,
-        "lang": "en",
-        "metadata": {
-            "iso_language_code": "en",
-            "result_type": "recent"
-        },
-        "place": null,
-        "retweet_count": 104,
-        "retweeted": false,
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "text": "VKOOK: Capricorn and Virgo: This relationship has a strong foundation that is based on security and a realistic approach to life in general.",
-        "truncated": false,
-        "user": {
-            "contributors_enabled": false,
-            "created_at": "Wed Apr 01 00:30:50 +0000 2015",
-            "default_profile": false,
-            "default_profile_image": false,
-            "description": "",
-            "entities": {
-                "description": {
-                    "urls": []
-                }
-            },
-            "favourites_count": 204,
-            "follow_request_sent": false,
-            "followers_count": 14164,
-            "following": false,
-            "friends_count": 18,
-            "geo_enabled": false,
-            "has_extended_profile": false,
-            "id": 3130887501,
-            "id_str": "3130887501",
-            "is_translation_enabled": false,
-            "is_translator": false,
-            "lang": "en",
-            "listed_count": 46,
-            "location": "",
-            "name": "Zodiacs",
-            "notifications": false,
-            "profile_background_color": "ABB8C2",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": true,
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/3130887501/1429672755",
-            "profile_image_url": "http://pbs.twimg.com/profile_images/590715530685853697/1Xxi0lHc_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/590715530685853697/1Xxi0lHc_normal.png",
-            "profile_link_color": "ABB8C2",
-            "profile_sidebar_border_color": "C0DEED",
-            "profile_sidebar_fill_color": "DDEEF6",
-            "profile_text_color": "333333",
-            "profile_use_background_image": false,
-            "protected": false,
-            "screen_name": "signskpop",
-            "statuses_count": 2987,
-            "time_zone": "Atlantic Time (Canada)",
-            "url": null,
-            "utc_offset": -14400,
-            "verified": false
-        }
-    },
-    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-    "text": "RT @signskpop: VKOOK: Capricorn and Virgo: This relationship has a strong foundation that is based on security and a realistic approach to \u2026",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": false,
+    "profile_background_color": "EBEBEB",
+    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/742059665/e04e810c3a0ce82878f3285eda8408c9.png",
+    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/742059665/e04e810c3a0ce82878f3285eda8408c9.png",
+    "profile_background_tile": true,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/729167226691969024/43UcYrwM_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/729167226691969024/43UcYrwM_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/606973150/1437081954",
+    "profile_link_color": "990000",
+    "profile_sidebar_border_color": "FFFFFF",
+    "profile_sidebar_fill_color": "DDEEF6",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "has_extended_profile": false,
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": true,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "none"
+  },
+  "geo": null,
+  "coordinates": null,
+  "place": null,
+  "contributors": null,
+  "retweeted_status": {
+    "created_at": "Sun Apr 30 18:18:09 +0000 2017",
+    "id": 858747317024735200,
+    "id_str": "858747317024735232",
+    "text": "One of the primary drivers for me joining Airbnb is that we introduce just enough screentime in your life to get you outside &amp; exploring 🌎🌍🌏",
     "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 858747019862491100,
+    "in_reply_to_status_id_str": "858747019862491136",
+    "in_reply_to_user_id": 14199907,
+    "in_reply_to_user_id_str": "14199907",
+    "in_reply_to_screen_name": "jongold",
     "user": {
-        "contributors_enabled": false,
-        "created_at": "Sun Aug 10 03:17:04 +0000 2014",
-        "default_profile": false,
-        "default_profile_image": false,
-        "description": "i see b.e.a.u.t.y. in everything but {myself}",
-        "entities": {
-            "description": {
-                "urls": []
-            },
-            "url": {
-                "urls": [
-                    {
-                        "display_url": "socialspirit.com.br/perfil/satori-\u2026",
-                        "expanded_url": "https://socialspirit.com.br/perfil/satori-sama",
-                        "indices": [
-                            0,
-                            23
-                        ],
-                        "url": "https://t.co/CK5zVRgSk7"
-                    }
-                ]
+      "id": 14199907,
+      "id_str": "14199907",
+      "name": "@jongold",
+      "screen_name": "jongold",
+      "location": "California, USA",
+      "description": "an equal command of technology and form • functional programming (oc)cultist • design tools, systems & AI @airbnbdesign • writing https://t.co/aXiyT3sAnQ",
+      "url": "https://t.co/qOOlEarZ1u",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/qOOlEarZ1u",
+              "expanded_url": "http://jon.gold",
+              "display_url": "jon.gold",
+              "indices": [
+                0,
+                23
+              ]
             }
+          ]
         },
-        "favourites_count": 2487,
-        "follow_request_sent": false,
-        "followers_count": 98,
-        "following": false,
-        "friends_count": 93,
-        "geo_enabled": true,
-        "has_extended_profile": false,
-        "id": 2738698450,
-        "id_str": "2738698450",
-        "is_translation_enabled": false,
-        "is_translator": false,
-        "lang": "en-gb",
-        "listed_count": 1,
-        "location": "puta que pariu",
-        "name": "dudinha \u2740",
-        "notifications": false,
-        "profile_background_color": "000000",
-        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/679511485278744577/U_5oVp9H.jpg",
-        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/679511485278744577/U_5oVp9H.jpg",
-        "profile_background_tile": true,
-        "profile_banner_url": "https://pbs.twimg.com/profile_banners/2738698450/1451678906",
-        "profile_image_url": "http://pbs.twimg.com/profile_images/683017010528280576/rBbZApYb_normal.png",
-        "profile_image_url_https": "https://pbs.twimg.com/profile_images/683017010528280576/rBbZApYb_normal.png",
-        "profile_link_color": "000000",
-        "profile_sidebar_border_color": "000000",
-        "profile_sidebar_fill_color": "000000",
-        "profile_text_color": "000000",
-        "profile_use_background_image": true,
-        "protected": false,
-        "screen_name": "byuntttae",
-        "statuses_count": 7433,
-        "time_zone": "Eastern Time (US & Canada)",
-        "url": "https://t.co/CK5zVRgSk7",
-        "utc_offset": -18000,
-        "verified": false
-    }
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/aXiyT3sAnQ",
+              "expanded_url": "http://jon.gold/txt",
+              "display_url": "jon.gold/txt",
+              "indices": [
+                130,
+                153
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 3286,
+      "friends_count": 1099,
+      "listed_count": 535,
+      "created_at": "Sun Mar 23 00:50:47 +0000 2008",
+      "favourites_count": 48672,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 7038,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "222222",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/833785170285178881/loBb32g3_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/833785170285178881/loBb32g3_normal.jpg",
+      "profile_link_color": "C6A17D",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "01FFAF",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "regular"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 2,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "is_quote_status": false,
+  "retweet_count": 1,
+  "favorite_count": 0,
+  "favorited": false,
+  "retweeted": false,
+  "lang": "en"
 }

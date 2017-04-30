@@ -41,9 +41,6 @@ export default class TweetStream {
       new Date(data.message.created_at)
     );
 
-    // Uncomment for debugging purposes
-    // console.log(JSON.stringify(data.message, null, 2))
-
     this._tweets.push(data.message);
 
     if (this._tweets.length >= this._batchSize) {

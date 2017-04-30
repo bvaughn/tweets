@@ -2,6 +2,7 @@
   padding: 9px 12px;
   padding-left: 60px;
   border-bottom: 1px solid #e6ecf0;
+  min-height: 70px;
 }
 .Tweet:hover {
   background-color: #f5f8fa;
@@ -32,7 +33,7 @@
   margin-left: -54px;
   width: 48px;
   height: 48px;
-  border-radius: 5px;
+  border-radius: 0.25rem;
 }
 
 .ImageMedia {
@@ -95,4 +96,13 @@
   margin-left: -54px;
   width: 48px;
   text-align: right;
+}
+
+.QuotedStatus {
+  display: block;
+  margin-top: 1rem;
+  padding: 9px 12px;
+  border: solid 1px #e6ecf0;
+  cursor: pointer;
+  border-radius: 0.25rem;
 }

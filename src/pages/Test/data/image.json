@@ -1,151 +1,39 @@
 {
-  "created_at": "Sun Apr 23 22:35:38 +0000 2017",
-  "id": 856275398056845300,
-  "id_str": "856275398056845312",
-  "text": ".@Flintrass entertaining the fans! #TeamCooperTire #PBR #CooperMTP https://t.co/pI3PVm2G5W",
-  "display_text_range": [
-    0,
-    66
-  ],
-  "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+  "created_at": "Sun Apr 30 16:44:31 +0000 2017",
+  "id": 858723752699351000,
+  "id_str": "858723752699351040",
+  "text": "This Gatsby's patented \"Stop coding and play with me\" move https://t.co/WRLVjcEO5c",
   "truncated": false,
-  "in_reply_to_status_id": null,
-  "in_reply_to_status_id_str": null,
-  "in_reply_to_user_id": null,
-  "in_reply_to_user_id_str": null,
-  "in_reply_to_screen_name": null,
-  "user": {
-    "id": 615459843,
-    "id_str": "615459843",
-    "name": "Team Cooper Tire",
-    "screen_name": "TeamCooperTire",
-    "location": "Findlay, OH",
-    "url": "http://www.teamcoopertire.com",
-    "description": "The Official Twitter account for #TeamCooperTire sponsorship, events, athletes, and activation.\nFor information on our products, follow @CooperTire",
-    "protected": false,
-    "verified": false,
-    "followers_count": 10017,
-    "friends_count": 990,
-    "listed_count": 90,
-    "favourites_count": 3615,
-    "statuses_count": 22727,
-    "created_at": "Fri Jun 22 17:46:12 +0000 2012",
-    "utc_offset": -25200,
-    "time_zone": "Pacific Time (US & Canada)",
-    "geo_enabled": true,
-    "lang": "en",
-    "contributors_enabled": false,
-    "is_translator": false,
-    "profile_background_color": "B2DFDA",
-    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000115157079/863c5f9fc9a98cddf7a7839cf6c2249c.jpeg",
-    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000115157079/863c5f9fc9a98cddf7a7839cf6c2249c.jpeg",
-    "profile_background_tile": true,
-    "profile_link_color": "003082",
-    "profile_sidebar_border_color": "FFFFFF",
-    "profile_sidebar_fill_color": "DDEEF6",
-    "profile_text_color": "333333",
-    "profile_use_background_image": true,
-    "profile_image_url": "http://pbs.twimg.com/profile_images/660819604395036673/TUqS3FcI_normal.jpg",
-    "profile_image_url_https": "https://pbs.twimg.com/profile_images/660819604395036673/TUqS3FcI_normal.jpg",
-    "profile_banner_url": "https://pbs.twimg.com/profile_banners/615459843/1483796666",
-    "default_profile": false,
-    "default_profile_image": false,
-    "following": null,
-    "follow_request_sent": null,
-    "notifications": null
-  },
-  "geo": null,
-  "coordinates": null,
-  "place": {
-    "id": "2dbbd1540f814343",
-    "url": "https://api.twitter.com/1.1/geo/id/2dbbd1540f814343.json",
-    "place_type": "city",
-    "name": "Tacoma",
-    "full_name": "Tacoma, WA",
-    "country_code": "US",
-    "country": "United States",
-    "bounding_box": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            -122.562215,
-            47.166863
-          ],
-          [
-            -122.562215,
-            47.319058
-          ],
-          [
-            -122.348473,
-            47.319058
-          ],
-          [
-            -122.348473,
-            47.166863
-          ]
-        ]
-      ]
-    },
-    "attributes": {}
-  },
-  "contributors": null,
-  "is_quote_status": false,
-  "retweet_count": 0,
-  "favorite_count": 0,
   "entities": {
-    "hashtags": [
-      {
-        "text": "TeamCooperTire",
-        "indices": [
-          35,
-          50
-        ]
-      },
-      {
-        "text": "PBR",
-        "indices": [
-          51,
-          55
-        ]
-      },
-      {
-        "text": "CooperMTP",
-        "indices": [
-          56,
-          66
-        ]
-      }
-    ],
-    "urls": [],
-    "user_mentions": [
-      {
-        "screen_name": "Flintrass",
-        "name": "Flint Rasmussen",
-        "id": 231162690,
-        "id_str": "231162690",
-        "indices": [
-          1,
-          11
-        ]
-      }
-    ],
+    "hashtags": [],
     "symbols": [],
+    "user_mentions": [],
+    "urls": [],
     "media": [
       {
-        "id": 856275383850647600,
-        "id_str": "856275383850647552",
+        "id": 858723739172610000,
+        "id_str": "858723739172610049",
         "indices": [
-          67,
-          90
+          59,
+          82
         ],
-        "media_url": "http://pbs.twimg.com/media/C-IZ7MRUQAAb6OC.jpg",
-        "media_url_https": "https://pbs.twimg.com/media/C-IZ7MRUQAAb6OC.jpg",
-        "url": "https://t.co/pI3PVm2G5W",
-        "display_url": "pic.twitter.com/pI3PVm2G5W",
-        "expanded_url": "https://twitter.com/TeamCooperTire/status/856275398056845312/photo/1",
+        "media_url": "http://pbs.twimg.com/media/C-rMsOmUIAEMpNH.jpg",
+        "media_url_https": "https://pbs.twimg.com/media/C-rMsOmUIAEMpNH.jpg",
+        "url": "https://t.co/WRLVjcEO5c",
+        "display_url": "pic.twitter.com/WRLVjcEO5c",
+        "expanded_url": "https://twitter.com/brian_d_vaughn/status/858723752699351040/photo/1",
         "type": "photo",
         "sizes": {
+          "small": {
+            "w": 680,
+            "h": 510,
+            "resize": "fit"
+          },
+          "medium": {
+            "w": 1200,
+            "h": 900,
+            "resize": "fit"
+          },
           "thumb": {
             "w": 150,
             "h": 150,
@@ -154,16 +42,6 @@
           "large": {
             "w": 2048,
             "h": 1536,
-            "resize": "fit"
-          },
-          "medium": {
-            "w": 1200,
-            "h": 900,
-            "resize": "fit"
-          },
-          "small": {
-            "w": 680,
-            "h": 510,
             "resize": "fit"
           }
         }
@@ -173,19 +51,29 @@
   "extended_entities": {
     "media": [
       {
-        "id": 856275383850647600,
-        "id_str": "856275383850647552",
+        "id": 858723739172610000,
+        "id_str": "858723739172610049",
         "indices": [
-          67,
-          90
+          59,
+          82
         ],
-        "media_url": "http://pbs.twimg.com/media/C-IZ7MRUQAAb6OC.jpg",
-        "media_url_https": "https://pbs.twimg.com/media/C-IZ7MRUQAAb6OC.jpg",
-        "url": "https://t.co/pI3PVm2G5W",
-        "display_url": "pic.twitter.com/pI3PVm2G5W",
-        "expanded_url": "https://twitter.com/TeamCooperTire/status/856275398056845312/photo/1",
+        "media_url": "http://pbs.twimg.com/media/C-rMsOmUIAEMpNH.jpg",
+        "media_url_https": "https://pbs.twimg.com/media/C-rMsOmUIAEMpNH.jpg",
+        "url": "https://t.co/WRLVjcEO5c",
+        "display_url": "pic.twitter.com/WRLVjcEO5c",
+        "expanded_url": "https://twitter.com/brian_d_vaughn/status/858723752699351040/photo/1",
         "type": "photo",
         "sizes": {
+          "small": {
+            "w": 680,
+            "h": 510,
+            "resize": "fit"
+          },
+          "medium": {
+            "w": 1200,
+            "h": 900,
+            "resize": "fit"
+          },
           "thumb": {
             "w": 150,
             "h": 150,
@@ -195,26 +83,87 @@
             "w": 2048,
             "h": 1536,
             "resize": "fit"
-          },
-          "medium": {
-            "w": 1200,
-            "h": 900,
-            "resize": "fit"
-          },
-          "small": {
-            "w": 680,
-            "h": 510,
-            "resize": "fit"
           }
         }
       }
     ]
   },
+  "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+  "in_reply_to_status_id": null,
+  "in_reply_to_status_id_str": null,
+  "in_reply_to_user_id": null,
+  "in_reply_to_user_id_str": null,
+  "in_reply_to_screen_name": null,
+  "user": {
+    "id": 99973385,
+    "id_str": "99973385",
+    "name": "Brian Vaughn",
+    "screen_name": "brian_d_vaughn",
+    "location": "Mountain View, CA",
+    "description": "Creating software & music. @reactjs core team @facebook. Author of react-virtualized. Formerly at @treasuredata and @google.",
+    "url": "https://t.co/Cqwto8T77X",
+    "entities": {
+      "url": {
+        "urls": [
+          {
+            "url": "https://t.co/Cqwto8T77X",
+            "expanded_url": "http://www.briandavidvaughn.com",
+            "display_url": "briandavidvaughn.com",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      },
+      "description": {
+        "urls": []
+      }
+    },
+    "protected": false,
+    "followers_count": 2611,
+    "friends_count": 95,
+    "listed_count": 105,
+    "created_at": "Mon Dec 28 15:12:52 +0000 2009",
+    "favourites_count": 4609,
+    "utc_offset": -18000,
+    "time_zone": "Central Time (US & Canada)",
+    "geo_enabled": false,
+    "verified": false,
+    "statuses_count": 5060,
+    "lang": "en",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": false,
+    "profile_background_color": "C0DEED",
+    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_tile": false,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/788507837991313408/ZqqOwob8_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/788507837991313408/ZqqOwob8_normal.jpg",
+    "profile_link_color": "1DA1F2",
+    "profile_sidebar_border_color": "C0DEED",
+    "profile_sidebar_fill_color": "DDEEF6",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "has_extended_profile": false,
+    "default_profile": true,
+    "default_profile_image": false,
+    "following": false,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "none"
+  },
+  "geo": null,
+  "coordinates": null,
+  "place": null,
+  "contributors": null,
+  "is_quote_status": false,
+  "retweet_count": 0,
+  "favorite_count": 18,
   "favorited": false,
   "retweeted": false,
   "possibly_sensitive": false,
-  "filter_level": "low",
-  "lang": "en",
-  "timestamp_ms": "1492986938381",
-  "timestring": "4/23 3:35:38 PM"
+  "possibly_sensitive_appealable": false,
+  "lang": "en"
 }

@@ -1,0 +1,29 @@
+.Outer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  flex: 75px 0 0;
+}
+
+.Body {
+  flex-grow: 1;
+  display: flex;
+  overflow-y: auto;
+  position: relative;
+}
+
+.BodyWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.Content {
+  height: 100%;
+  width: 590px;
+  max-width: 100%;
+  margin: 0 auto;
+}

@@ -1,0 +1,238 @@
+{
+  "created_at": "Sun Apr 30 07:01:39 +0000 2017",
+  "id": 858577067838890000,
+  "id_str": "858577067838889984",
+  "text": "Fine with me 🙌 https://t.co/1OtfCBuEg4",
+  "truncated": false,
+  "entities": {
+    "hashtags": [],
+    "symbols": [],
+    "user_mentions": [],
+    "urls": [
+      {
+        "url": "https://t.co/1OtfCBuEg4",
+        "expanded_url": "https://twitter.com/porteneuve/status/858568687393091584",
+        "display_url": "twitter.com/porteneuve/sta…",
+        "indices": [
+          15,
+          38
+        ]
+      }
+    ]
+  },
+  "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+  "in_reply_to_status_id": null,
+  "in_reply_to_status_id_str": null,
+  "in_reply_to_user_id": null,
+  "in_reply_to_user_id_str": null,
+  "in_reply_to_screen_name": null,
+  "user": {
+    "id": 15540222,
+    "id_str": "15540222",
+    "name": "Guillermo Rauch",
+    "screen_name": "rauchg",
+    "location": "SF",
+    "description": "@zeithq",
+    "url": "http://t.co/CCq1K8vos8",
+    "entities": {
+      "url": {
+        "urls": [
+          {
+            "url": "http://t.co/CCq1K8vos8",
+            "expanded_url": "http://rauchg.com",
+            "display_url": "rauchg.com",
+            "indices": [
+              0,
+              22
+            ]
+          }
+        ]
+      },
+      "description": {
+        "urls": []
+      }
+    },
+    "protected": false,
+    "followers_count": 27407,
+    "friends_count": 961,
+    "listed_count": 1324,
+    "created_at": "Tue Jul 22 22:54:37 +0000 2008",
+    "favourites_count": 10922,
+    "utc_offset": -25200,
+    "time_zone": "Pacific Time (US & Canada)",
+    "geo_enabled": true,
+    "verified": true,
+    "statuses_count": 16347,
+    "lang": "en",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": false,
+    "profile_background_color": "131516",
+    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+    "profile_background_tile": true,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/721536199681318912/rflwVOZ8_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/721536199681318912/rflwVOZ8_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/15540222/1483048949",
+    "profile_link_color": "000000",
+    "profile_sidebar_border_color": "EEEEEE",
+    "profile_sidebar_fill_color": "EFEFEF",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "has_extended_profile": true,
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": true,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "none"
+  },
+  "geo": null,
+  "coordinates": null,
+  "place": {
+    "id": "5a110d312052166f",
+    "url": "https://api.twitter.com/1.1/geo/id/5a110d312052166f.json",
+    "place_type": "city",
+    "name": "San Francisco",
+    "full_name": "San Francisco, CA",
+    "country_code": "US",
+    "country": "United States",
+    "contained_within": [],
+    "bounding_box": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -122.514926,
+            37.708075
+          ],
+          [
+            -122.357031,
+            37.708075
+          ],
+          [
+            -122.357031,
+            37.833238
+          ],
+          [
+            -122.514926,
+            37.833238
+          ]
+        ]
+      ]
+    },
+    "attributes": {}
+  },
+  "contributors": null,
+  "is_quote_status": true,
+  "quoted_status_id": 858568687393091600,
+  "quoted_status_id_str": "858568687393091584",
+  "quoted_status": {
+    "created_at": "Sun Apr 30 06:28:21 +0000 2017",
+    "id": 858568687393091600,
+    "id_str": "858568687393091584",
+    "text": "I propose we rename @zeithq \"Factory Of Awesome\". As it is what they keep doing. now, DNS, Next.js, pkg... Mind blowing.",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "zeithq",
+          "name": "ZEIT",
+          "id": 4686835494,
+          "id_str": "4686835494",
+          "indices": [
+            20,
+            27
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.echofon.com\" rel=\"nofollow\">Echofon  Android</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 16314033,
+      "id_str": "16314033",
+      "name": "ChristophePorteneuve",
+      "screen_name": "porteneuve",
+      "location": "Paris",
+      "description": "I make cool stuff and teach others to (Git/GitHub, JS/Node…). Husband to @doudou80, dad to @IAmMaxence.",
+      "url": "https://t.co/6WA9uU0tfo",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/6WA9uU0tfo",
+              "expanded_url": "http://tddsworld.com",
+              "display_url": "tddsworld.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3492,
+      "friends_count": 84,
+      "listed_count": 306,
+      "created_at": "Tue Sep 16 17:56:08 +0000 2008",
+      "favourites_count": 33,
+      "utc_offset": 7200,
+      "time_zone": "Paris",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 24423,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/620269388109873153/aR__hlVF_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/620269388109873153/aR__hlVF_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/16314033/1413924038",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 3,
+    "favorite_count": 27,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "retweet_count": 8,
+  "favorite_count": 62,
+  "favorited": false,
+  "retweeted": false,
+  "possibly_sensitive": false,
+  "possibly_sensitive_appealable": false,
+  "lang": "en"
+}

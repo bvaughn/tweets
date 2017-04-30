@@ -1,125 +1,121 @@
 {
-  "created_at": "Sun Apr 23 17:51:42 +0000 2017",
-  "id": 856203944254681100,
-  "id_str": "856203944254681088",
-  "text": "I'm at Igreja Batista dos Jardins in Parnamirim, RN https://t.co/J9aZKdgn8A",
-  "source": "<a href=\"http://foursquare.com\" rel=\"nofollow\">Foursquare</a>",
+  "created_at": "Sun Apr 30 18:24:27 +0000 2017",
+  "id": 858748899384856600,
+  "id_str": "858748899384856583",
+  "text": "There is no reason to use index keys :(\nhttps://t.co/TGr1rVrqpH",
   "truncated": false,
-  "in_reply_to_status_id": null,
-  "in_reply_to_status_id_str": null,
-  "in_reply_to_user_id": null,
-  "in_reply_to_user_id_str": null,
-  "in_reply_to_screen_name": null,
+  "entities": {
+    "hashtags": [],
+    "symbols": [],
+    "user_mentions": [],
+    "urls": [
+      {
+        "url": "https://t.co/TGr1rVrqpH",
+        "expanded_url": "http://stackoverflow.com/a/42775667/194340",
+        "display_url": "stackoverflow.com/a/42775667/194…",
+        "indices": [
+          109,
+          132
+        ]
+      }
+    ]
+  },
+  "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+  "in_reply_to_status_id": 858748290237476900,
+  "in_reply_to_status_id_str": "858748290237476864",
+  "in_reply_to_user_id": 16468446,
+  "in_reply_to_user_id_str": "16468446",
+  "in_reply_to_screen_name": "ryanflorence",
   "user": {
-    "id": 341836624,
-    "id_str": "341836624",
-    "name": "Goldemberg Santos",
-    "screen_name": "golldemberg",
-    "location": "João Pessoa, Paraíba",
-    "url": null,
-    "description": "Servo de Deus,bacharel em administração pela UESC, amigo para todas as horas, movido a desafios e vencedor de obstáculos.",
+    "id": 16495353,
+    "id_str": "16495353",
+    "name": "Jason Miller 🦊⚛",
+    "screen_name": "_developit",
+    "location": "Dundas, Ontario, Canada",
+    "description": "Creator of @preactjs, a 3kb react alternative. https://t.co/i0RLycIg3R \nhttps://t.co/oGOGAAmmCm",
+    "url": "http://t.co/NY6NSQDq6W",
+    "entities": {
+      "url": {
+        "urls": [
+          {
+            "url": "http://t.co/NY6NSQDq6W",
+            "expanded_url": "http://jasonformat.com",
+            "display_url": "jasonformat.com",
+            "indices": [
+              0,
+              22
+            ]
+          }
+        ]
+      },
+      "description": {
+        "urls": [
+          {
+            "url": "https://t.co/i0RLycIg3R",
+            "expanded_url": "http://preactjs.com",
+            "display_url": "preactjs.com",
+            "indices": [
+              47,
+              70
+            ]
+          },
+          {
+            "url": "https://t.co/oGOGAAmmCm",
+            "expanded_url": "http://github.com/developit",
+            "display_url": "github.com/developit",
+            "indices": [
+              72,
+              95
+            ]
+          }
+        ]
+      }
+    },
     "protected": false,
-    "verified": false,
-    "followers_count": 129,
-    "friends_count": 298,
-    "listed_count": 2,
-    "favourites_count": 6,
-    "statuses_count": 4968,
-    "created_at": "Mon Jul 25 01:38:23 +0000 2011",
-    "utc_offset": null,
-    "time_zone": null,
+    "followers_count": 6669,
+    "friends_count": 1431,
+    "listed_count": 253,
+    "created_at": "Sun Sep 28 04:36:42 +0000 2008",
+    "favourites_count": 24866,
+    "utc_offset": -14400,
+    "time_zone": "Eastern Time (US & Canada)",
     "geo_enabled": true,
-    "lang": "pt",
+    "verified": false,
+    "statuses_count": 15523,
+    "lang": "en",
     "contributors_enabled": false,
     "is_translator": false,
-    "profile_background_color": "C0DEED",
-    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/309796097/005.JPG",
-    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/309796097/005.JPG",
-    "profile_background_tile": false,
-    "profile_link_color": "0084B4",
-    "profile_sidebar_border_color": "C0DEED",
-    "profile_sidebar_fill_color": "C7BD52",
-    "profile_text_color": "291F29",
+    "is_translation_enabled": false,
+    "profile_background_color": "1A1B1F",
+    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/3999841/bg.gif",
+    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/3999841/bg.gif",
+    "profile_background_tile": true,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/795334749476810753/LljqR8gE_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/795334749476810753/LljqR8gE_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/16495353/1479214234",
+    "profile_link_color": "ED4300",
+    "profile_sidebar_border_color": "3B3B3B",
+    "profile_sidebar_fill_color": "212121",
+    "profile_text_color": "555555",
     "profile_use_background_image": true,
-    "profile_image_url": "http://pbs.twimg.com/profile_images/1459199248/vvvvv_normal.jpg",
-    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1459199248/vvvvv_normal.jpg",
+    "has_extended_profile": true,
     "default_profile": false,
     "default_profile_image": false,
-    "following": null,
-    "follow_request_sent": null,
-    "notifications": null
+    "following": true,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "none"
   },
-  "geo": {
-    "type": "Point",
-    "coordinates": [
-      -5.92464848,
-      -35.20330667
-    ]
-  },
-  "coordinates": {
-    "type": "Point",
-    "coordinates": [
-      -35.20330667,
-      -5.92464848
-    ]
-  },
-  "place": {
-    "id": "eb064d2fe812dac8",
-    "url": "https://api.twitter.com/1.1/geo/id/eb064d2fe812dac8.json",
-    "place_type": "city",
-    "name": "Parnamirim",
-    "full_name": "Parnamirim, Brasil",
-    "country_code": "BR",
-    "country": "Brasil",
-    "bounding_box": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            -35.309263,
-            -5.984814
-          ],
-          [
-            -35.309263,
-            -5.851611
-          ],
-          [
-            -35.119821,
-            -5.851611
-          ],
-          [
-            -35.119821,
-            -5.984814
-          ]
-        ]
-      ]
-    },
-    "attributes": {}
-  },
+  "geo": null,
+  "coordinates": null,
+  "place": null,
   "contributors": null,
   "is_quote_status": false,
   "retweet_count": 0,
   "favorite_count": 0,
-  "entities": {
-    "hashtags": [],
-    "urls": [
-      {
-        "url": "https://t.co/J9aZKdgn8A",
-        "expanded_url": "https://www.swarmapp.com/c/15YyMBc1EXI",
-        "display_url": "swarmapp.com/c/15YyMBc1EXI",
-        "indices": [
-          52,
-          75
-        ]
-      }
-    ],
-    "user_mentions": [],
-    "symbols": []
-  },
   "favorited": false,
   "retweeted": false,
   "possibly_sensitive": false,
-  "filter_level": "low",
-  "lang": "und",
-  "timestamp_ms": "1492969902467"
+  "possibly_sensitive_appealable": false,
+  "lang": "en"
 }

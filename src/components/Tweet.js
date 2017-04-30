@@ -8,8 +8,6 @@ import styles from './Tweet.css';
 // TODO Support entities: https://dev.twitter.com/overview/api/entities
 // + inline media ~ extended_tweet.entities.media
 
-// TODO Handle retweeted case (with custom text or not)
-
 const ROUGH_ESTIMATE_IMAGE_WIDTH = 550;
 
 const AUTO_LINK_OPTIONS = {
@@ -30,6 +28,9 @@ export default class Tweet extends Component {
 
   constructor(props) {
     super(props);
+
+    // Uncomment for debugging purposes
+    //console.log(JSON.stringify(props.tweet, null, 2))
 
     this.state = {
       mediaExpanded: false,
@@ -64,6 +65,18 @@ export default class Tweet extends Component {
     ) {
       media = tweet.extended_entities.media[0];
       text = text.substr(0, media.indices[0]);
+    }
+
+    // Strip quoted status placeholder text too.
+    const quotedStatus = tweet.quoted_status;
+    let quotedStatusUrl;
+    if (
+      quotedStatus &&
+      tweet.entities &&
+      tweet.entities.urls.length
+    ) {
+      quotedStatusUrl = tweet.entities.urls[0];
+      text = text.substr(0, quotedStatusUrl.indices[0]);
     }
 
     let replyingTo;
@@ -154,6 +167,20 @@ export default class Tweet extends Component {
         />
 
         {this._renderMedia()}
+
+        {quotedStatus && (
+          <a
+            className={cn(styles.QuotedStatus, styles.Link)}
+            href={quotedStatusUrl.url}
+          >
+            <div>
+              <strong>{quotedStatus.user.name}</strong> @{quotedStatus.user.screen_name}
+            </div>
+            <div>
+              {quotedStatus.text}
+            </div>
+          </a>
+        )}
 
         {authenticated && (
           <div className={styles.Icons}>

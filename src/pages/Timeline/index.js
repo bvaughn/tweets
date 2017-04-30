@@ -1,9 +1,7 @@
-import cn from 'classnames';
 import { h, Component, options } from 'preact';
 import LoadingIndicator from 'components/LoadingIndicator';
 import TweetList from 'components/TweetList';
 import TweetStream from './TweetStream';
-import styles from './Timeline.css';
 import config from '../../config';
 
 // Use requestAnimationFrame by default but allow URL param to disable.
@@ -13,7 +11,6 @@ options.debounceRendering = location.search.indexOf('raf=false') < 0
 
 export default class Timeline extends Component {
   state = {
-    authenticated: false,
     tweets: [],
   };
 
@@ -25,11 +22,10 @@ export default class Timeline extends Component {
   render() {
     const { authenticated, disableMedia, tweets } = this.state;
 
-    let content;
     if (tweets.length === 0) {
-      content = <LoadingIndicator />;
+      return <LoadingIndicator />;
     } else {
-      content = (
+      return (
         <TweetList
           authenticated={authenticated}
           disableMedia={true /* TODO Add profile setting later? */}
@@ -38,42 +34,6 @@ export default class Timeline extends Component {
         />
       );
     }
-
-    return (
-      <div className={styles.Timeline}>
-        <div className={styles.Header}>
-          <div className={styles.HeaderAlignment}>
-            <a
-              className={styles.IconButton}
-              href="https://github.com/bvaughn/tweets"
-            >
-              <i className="fa fa-lg fa-code" />
-            </a>
-
-            <div className={styles.Right}>
-              {authenticated &&
-                <a
-                  className={cn(styles.IconButton, styles.SignInButton)}
-                  href={config.tweetsServerUrl + '/logout'}
-                >
-                  <i className="fa fa-lg fa-sign-out" />
-                </a>}
-              {!authenticated &&
-                <a
-                  className={cn(styles.IconButton, styles.SignInButton)}
-                  href={config.tweetsServerUrl + '/login'}
-                >
-                  <i className="fa fa-lg fa-sign-in" />
-                </a>}
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.ContentWrapper}>
-          {content}
-        </div>
-      </div>
-    );
   }
 
   _fetchTweets = () => {

@@ -1,96 +1,132 @@
 {
-  "created_at": "Sun Apr 23 18:39:59 +0000 2017",
-  "id": 856216093718982700,
-  "id_str": "856216093718982656",
-  "text": "I'm at Baykuş Cafe in Ankara w/ @mustafacanbalc @dogicelikors https://t.co/RjoZIROTPD",
-  "source": "<a href=\"http://foursquare.com\" rel=\"nofollow\">Foursquare</a>",
+  "created_at": "Fri Apr 28 00:36:35 +0000 2017",
+  "id": 857755389042896900,
+  "id_str": "857755389042896897",
+  "text": "I'm looking for a well structured OS project that uses React, React Router, Redux and has extensive test suite.  @JakeGinnivan @dan_abramov",
   "truncated": false,
+  "entities": {
+    "hashtags": [],
+    "symbols": [],
+    "user_mentions": [
+      {
+        "screen_name": "JakeGinnivan",
+        "name": "Jake Ginnivan",
+        "id": 14877480,
+        "id_str": "14877480",
+        "indices": [
+          113,
+          126
+        ]
+      },
+      {
+        "screen_name": "dan_abramov",
+        "name": "Dan Abramov",
+        "id": 70345946,
+        "id_str": "70345946",
+        "indices": [
+          127,
+          139
+        ]
+      }
+    ],
+    "urls": []
+  },
+  "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
   "in_reply_to_status_id": null,
   "in_reply_to_status_id_str": null,
   "in_reply_to_user_id": null,
   "in_reply_to_user_id_str": null,
   "in_reply_to_screen_name": null,
   "user": {
-    "id": 993223915,
-    "id_str": "993223915",
-    "name": "Abdullah Yüksel",
-    "screen_name": "Yukselatasever",
-    "location": "Ankara, Türkiye",
-    "url": null,
-    "description": "Ben Giderim Gülüşüm Kalır Akıllarda.. :)",
+    "id": 64386027,
+    "id_str": "64386027",
+    "name": "Pawel Pabich",
+    "screen_name": "PawelPabich",
+    "location": "Brisbane",
+    "description": "Passionate problem solver. Beginner surfer. Dad. BBQ lover. Helping build better software @OctopusDeploy. Opinions are my own.",
+    "url": "https://t.co/KXZ0Hsjp8f",
+    "entities": {
+      "url": {
+        "urls": [
+          {
+            "url": "https://t.co/KXZ0Hsjp8f",
+            "expanded_url": "http://www.pabich.eu",
+            "display_url": "pabich.eu",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      },
+      "description": {
+        "urls": []
+      }
+    },
     "protected": false,
-    "verified": false,
-    "followers_count": 2293,
-    "friends_count": 83,
-    "listed_count": 10,
-    "favourites_count": 0,
-    "statuses_count": 2802,
-    "created_at": "Thu Dec 06 14:49:35 +0000 2012",
-    "utc_offset": 10800,
-    "time_zone": "Istanbul",
+    "followers_count": 522,
+    "friends_count": 224,
+    "listed_count": 30,
+    "created_at": "Mon Aug 10 11:54:11 +0000 2009",
+    "favourites_count": 43,
+    "utc_offset": 36000,
+    "time_zone": "Sydney",
     "geo_enabled": true,
-    "lang": "tr",
+    "verified": false,
+    "statuses_count": 6059,
+    "lang": "en",
     "contributors_enabled": false,
     "is_translator": false,
-    "profile_background_color": "032B2B",
-    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/851338203/f6ec5005bd40f3a09682b0703b5719f8.jpeg",
-    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/851338203/f6ec5005bd40f3a09682b0703b5719f8.jpeg",
-    "profile_background_tile": true,
-    "profile_link_color": "078A4D",
-    "profile_sidebar_border_color": "000000",
+    "is_translation_enabled": false,
+    "profile_background_color": "C0DEED",
+    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_tile": false,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/1482776084/PawelMainSquare_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1482776084/PawelMainSquare_normal.jpg",
+    "profile_link_color": "1DA1F2",
+    "profile_sidebar_border_color": "C0DEED",
     "profile_sidebar_fill_color": "DDEEF6",
     "profile_text_color": "333333",
     "profile_use_background_image": true,
-    "profile_image_url": "http://pbs.twimg.com/profile_images/846325566378835968/3Ocq0ufz_normal.jpg",
-    "profile_image_url_https": "https://pbs.twimg.com/profile_images/846325566378835968/3Ocq0ufz_normal.jpg",
-    "profile_banner_url": "https://pbs.twimg.com/profile_banners/993223915/1480083396",
-    "default_profile": false,
+    "has_extended_profile": false,
+    "default_profile": true,
     "default_profile_image": false,
-    "following": null,
-    "follow_request_sent": null,
-    "notifications": null
+    "following": false,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "none"
   },
-  "geo": {
-    "type": "Point",
-    "coordinates": [
-      39.984618,
-      32.703859
-    ]
-  },
-  "coordinates": {
-    "type": "Point",
-    "coordinates": [
-      32.703859,
-      39.984618
-    ]
-  },
+  "geo": null,
+  "coordinates": null,
   "place": {
-    "id": "62de99b000bffefc",
-    "url": "https://api.twitter.com/1.1/geo/id/62de99b000bffefc.json",
-    "place_type": "neighborhood",
-    "name": "Kardelen",
-    "full_name": "Kardelen, Yenimahalle",
-    "country_code": "TR",
-    "country": "Türkiye",
+    "id": "004ec16c62325149",
+    "url": "https://api.twitter.com/1.1/geo/id/004ec16c62325149.json",
+    "place_type": "city",
+    "name": "Brisbane",
+    "full_name": "Brisbane, Queensland",
+    "country_code": "AU",
+    "country": "Australia",
+    "contained_within": [],
     "bounding_box": {
       "type": "Polygon",
       "coordinates": [
         [
           [
-            32.691938,
-            39.969529
+            152.668522848,
+            -27.767440994
           ],
           [
-            32.691938,
-            39.986926
+            153.31787024,
+            -27.767440994
           ],
           [
-            32.727902,
-            39.986926
+            153.31787024,
+            -26.996844991
           ],
           [
-            32.727902,
-            39.969529
+            152.668522848,
+            -26.996844991
           ]
         ]
       ]
@@ -99,49 +135,9 @@
   },
   "contributors": null,
   "is_quote_status": false,
-  "retweet_count": 0,
-  "favorite_count": 0,
-  "entities": {
-    "hashtags": [],
-    "urls": [
-      {
-        "url": "https://t.co/RjoZIROTPD",
-        "expanded_url": "https://www.swarmapp.com/c/4QK7zTlYLu4",
-        "display_url": "swarmapp.com/c/4QK7zTlYLu4",
-        "indices": [
-          62,
-          85
-        ]
-      }
-    ],
-    "user_mentions": [
-      {
-        "screen_name": "MustafaCanBalc",
-        "name": "Mustafa Can Balc",
-        "id": 623728921,
-        "id_str": "623728921",
-        "indices": [
-          32,
-          47
-        ]
-      },
-      {
-        "screen_name": "dogicelikors",
-        "name": "Doğanay",
-        "id": 107095913,
-        "id_str": "107095913",
-        "indices": [
-          48,
-          61
-        ]
-      }
-    ],
-    "symbols": []
-  },
+  "retweet_count": 4,
+  "favorite_count": 35,
   "favorited": false,
   "retweeted": false,
-  "possibly_sensitive": false,
-  "filter_level": "low",
-  "lang": "tr",
-  "timestamp_ms": "1492972799125"
+  "lang": "en"
 }

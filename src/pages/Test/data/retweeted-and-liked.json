@@ -1,103 +1,90 @@
 {
-  "created_at": "Sun Apr 23 18:03:29 +0000 2017",
-  "id": 856206910969827300,
-  "id_str": "856206910969827328",
-  "text": "Off the next two days 😬💯",
-  "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+  "created_at": "Sun Apr 30 17:26:44 +0000 2017",
+  "id": 858734376074346500,
+  "id_str": "858734376074346496",
+  "text": "does anyone with a sizable react native codebase want to try running an analysis script on it to help me understand how ppl r using it?",
   "truncated": false,
+  "entities": {
+    "hashtags": [],
+    "symbols": [],
+    "user_mentions": [],
+    "urls": []
+  },
+  "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
   "in_reply_to_status_id": null,
   "in_reply_to_status_id_str": null,
   "in_reply_to_user_id": null,
   "in_reply_to_user_id_str": null,
   "in_reply_to_screen_name": null,
   "user": {
-    "id": 711247513,
-    "id_str": "711247513",
-    "name": "Gerod Johnson♉️",
-    "screen_name": "SniperRod",
-    "location": "Winston-Salem, NC",
-    "url": null,
-    "description": null,
+    "id": 606973150,
+    "id_str": "606973150",
+    "name": "Leland Richardson",
+    "screen_name": "intelligibabble",
+    "location": "San Francisco, CA",
+    "description": "Software Engineer @Airbnb. I like learning, discussing, and diving into challenges.",
+    "url": "http://t.co/80xVNhoS6i",
+    "entities": {
+      "url": {
+        "urls": [
+          {
+            "url": "http://t.co/80xVNhoS6i",
+            "expanded_url": "http://www.intelligiblebabble.com",
+            "display_url": "intelligiblebabble.com",
+            "indices": [
+              0,
+              22
+            ]
+          }
+        ]
+      },
+      "description": {
+        "urls": []
+      }
+    },
     "protected": false,
+    "followers_count": 3663,
+    "friends_count": 584,
+    "listed_count": 167,
+    "created_at": "Wed Jun 13 07:09:07 +0000 2012",
+    "favourites_count": 3103,
+    "utc_offset": -14400,
+    "time_zone": "Eastern Time (US & Canada)",
+    "geo_enabled": false,
     "verified": false,
-    "followers_count": 853,
-    "friends_count": 793,
-    "listed_count": 4,
-    "favourites_count": 1112,
-    "statuses_count": 8417,
-    "created_at": "Sun Jul 22 20:48:42 +0000 2012",
-    "utc_offset": null,
-    "time_zone": null,
-    "geo_enabled": true,
+    "statuses_count": 5067,
     "lang": "en",
     "contributors_enabled": false,
     "is_translator": false,
-    "profile_background_color": "C0DEED",
-    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-    "profile_background_tile": false,
-    "profile_link_color": "1DA1F2",
-    "profile_sidebar_border_color": "C0DEED",
+    "is_translation_enabled": false,
+    "profile_background_color": "EBEBEB",
+    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/742059665/e04e810c3a0ce82878f3285eda8408c9.png",
+    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/742059665/e04e810c3a0ce82878f3285eda8408c9.png",
+    "profile_background_tile": true,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/729167226691969024/43UcYrwM_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/729167226691969024/43UcYrwM_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/606973150/1437081954",
+    "profile_link_color": "990000",
+    "profile_sidebar_border_color": "FFFFFF",
     "profile_sidebar_fill_color": "DDEEF6",
     "profile_text_color": "333333",
     "profile_use_background_image": true,
-    "profile_image_url": "http://pbs.twimg.com/profile_images/831959177958457356/s0bpWT7R_normal.jpg",
-    "profile_image_url_https": "https://pbs.twimg.com/profile_images/831959177958457356/s0bpWT7R_normal.jpg",
-    "profile_banner_url": "https://pbs.twimg.com/profile_banners/711247513/1460011181",
-    "default_profile": true,
+    "has_extended_profile": false,
+    "default_profile": false,
     "default_profile_image": false,
-    "following": null,
-    "follow_request_sent": null,
-    "notifications": null
+    "following": true,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "none"
   },
   "geo": null,
   "coordinates": null,
-  "place": {
-    "id": "24a53a1880093fa9",
-    "url": "https://api.twitter.com/1.1/geo/id/24a53a1880093fa9.json",
-    "place_type": "city",
-    "name": "Winston-Salem",
-    "full_name": "Winston-Salem, NC",
-    "country_code": "US",
-    "country": "United States",
-    "bounding_box": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            -80.389019,
-            35.934126
-          ],
-          [
-            -80.389019,
-            36.240211
-          ],
-          [
-            -80.100949,
-            36.240211
-          ],
-          [
-            -80.100949,
-            35.934126
-          ]
-        ]
-      ]
-    },
-    "attributes": {}
-  },
+  "place": null,
   "contributors": null,
   "is_quote_status": false,
-  "retweet_count": 1,
-  "favorite_count": 1,
-  "entities": {
-    "hashtags": [],
-    "urls": [],
-    "user_mentions": [],
-    "symbols": []
-  },
+  "retweet_count": 5,
+  "favorite_count": 3,
   "favorited": true,
   "retweeted": true,
-  "filter_level": "low",
-  "lang": "en",
-  "timestamp_ms": "1492970609787"
+  "lang": "en"
 }
